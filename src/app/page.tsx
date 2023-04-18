@@ -1,124 +1,126 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="h-screen bg-gray-900 text-white">
+      <header className="py-5 px-20 text-xl flex items-center justify-between">
+        <a
+          href="#"
+          className="flex items-center gap-3 group relative before:w-0 before:hover:w-20 before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:left-11 before:bottom-0"
+        >
+          <svg
+            className="group-hover:rotate-180 transition-all duration-700"
+            width="32"
+            height="32"
+            viewBox="0 0 49 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+            <path
+              d="M48 24.5C48 29.9369 46.1149 35.2055 42.6658 39.4083C39.2167 43.611 34.417 46.4878 29.0847 47.5485C23.7523 48.6091 18.2171 47.7881 13.4222 45.2252C8.62734 42.6623 4.86945 38.5161 2.78886 33.4931C0.70827 28.4701 0.433699 22.8811 2.01193 17.6783C3.59017 12.4756 6.92355 7.98103 11.4441 4.96048C15.9647 1.93993 21.3928 0.58027 26.8034 1.11317C32.2141 1.64608 37.2726 4.03857 41.117 7.883L38.5485 10.4515C35.2983 7.2013 31.0217 5.17862 26.4474 4.72808C21.8731 4.27755 17.284 5.42705 13.4622 7.98071C9.64035 10.5344 6.82221 14.3342 5.48792 18.7328C4.15364 23.1313 4.38577 27.8564 6.14476 32.103C7.90376 36.3496 11.0808 39.8549 15.1345 42.0217C19.1882 44.1884 23.8679 44.8826 28.376 43.9859C32.8842 43.0891 36.9419 40.657 39.8579 37.1039C42.7739 33.5508 44.3676 29.0965 44.3676 24.5H48Z"
+              fill="white"
             />
+            <path
+              d="M16.0158 39.8059C12.4747 37.843 9.72374 34.7131 8.23167 30.9493C6.73959 27.1856 6.59871 23.0209 7.83302 19.1649C9.06733 15.3089 11.6005 12.0002 15.0008 9.80253C18.4011 7.60485 22.4583 6.65418 26.481 7.11251C30.5037 7.57084 34.243 9.4098 37.0618 12.3161C39.8807 15.2223 41.6046 19.0161 41.9398 23.0509C42.2751 27.0857 41.201 31.1119 38.9005 34.4436C36.6 37.7752 33.2155 40.2061 29.3236 41.3221L28.578 38.7219C31.8683 37.7784 34.7297 35.7233 36.6746 32.9066C38.6195 30.0899 39.5276 26.686 39.2442 23.2749C38.9607 19.8637 37.5033 16.6564 35.1201 14.1993C32.737 11.7423 29.5757 10.1876 26.1748 9.8001C22.7739 9.41262 19.3438 10.2163 16.4691 12.0743C13.5943 13.9323 11.4528 16.7296 10.4092 19.9895C9.36571 23.2495 9.48482 26.7704 10.7463 29.9524C12.0077 33.1344 14.3334 35.7806 17.3272 37.44L16.0158 39.8059Z"
+              fill="white"
+            />
+            <path
+              d="M24.5 12C27.392 12 30.1944 13.0027 32.4299 14.8374C34.6654 16.672 36.1957 19.225 36.7598 22.0614C37.324 24.8977 36.8873 27.842 35.524 30.3925C34.1608 32.9429 31.9554 34.9418 29.2836 36.0485C26.6118 37.1552 23.6389 37.3012 20.8715 36.4618C18.1041 35.6223 15.7133 33.8492 14.1067 31.4446C12.5 29.0401 11.7768 26.1528 12.0602 23.2748C12.3437 20.3968 13.6163 17.7061 15.6612 15.6612L17.0274 17.0274C15.2986 18.7562 14.2227 21.031 13.983 23.4642C13.7434 25.8973 14.3548 28.3383 15.7132 30.3712C17.0715 32.4041 19.0927 33.9031 21.4323 34.6128C23.772 35.3225 26.2854 35.1991 28.5442 34.2634C30.803 33.3278 32.6675 31.6379 33.8201 29.4817C34.9726 27.3254 35.3418 24.8363 34.8648 22.4383C34.3879 20.0404 33.0942 17.882 31.2042 16.3309C29.3143 14.7799 26.945 13.9321 24.5 13.9321L24.5 12Z"
+              fill="white"
+            />
+            <path
+              d="M17.0301 20.4442C17.9684 18.7159 19.477 17.3666 21.2987 16.6259C23.1204 15.8853 25.1426 15.7992 27.0206 16.3823C28.8987 16.9655 30.5165 18.1818 31.5983 19.824C32.6801 21.4662 33.159 23.4328 32.9535 25.3885C32.7479 27.3442 31.8706 29.1682 30.471 30.5496C29.0714 31.931 27.2361 32.7844 25.2778 32.9643C23.3195 33.1443 21.3594 32.6397 19.7315 31.5364C18.1036 30.4332 16.9086 28.7997 16.3501 26.9141L17.7273 26.5062C18.1914 28.0731 19.1845 29.4306 20.5373 30.3474C21.8901 31.2642 23.519 31.6836 25.1464 31.534C26.7737 31.3845 28.2989 30.6753 29.462 29.5273C30.6251 28.3794 31.3542 26.8636 31.525 25.2384C31.6958 23.6131 31.2978 21.9789 30.3988 20.6142C29.4998 19.2495 28.1554 18.2387 26.5947 17.7541C25.034 17.2695 23.3535 17.341 21.8396 17.9565C20.3258 18.572 19.0721 19.6933 18.2924 21.1295L17.0301 20.4442Z"
+              fill="white"
+            />
+            <path
+              d="M28.2197 27.0327C27.6337 27.8933 26.7675 28.5241 25.7687 28.8176C24.7698 29.1111 23.7001 29.0492 22.7417 28.6424C21.7834 28.2356 20.9958 27.5091 20.513 26.5867C20.0303 25.6643 19.8823 24.603 20.0943 23.5837C20.3063 22.5644 20.8652 21.6502 21.6757 20.9968C22.4862 20.3434 23.4982 19.9912 24.5393 20.0003C25.5803 20.0094 26.586 20.3791 27.385 21.0466C28.184 21.7141 28.7269 22.6379 28.921 23.6607L28.0934 23.8179C27.9356 22.9865 27.4944 22.2356 26.845 21.6931C26.1955 21.1506 25.3781 20.85 24.5319 20.8426C23.6858 20.8353 22.8632 21.1215 22.2044 21.6526C21.5456 22.1837 21.0914 22.9268 20.9191 23.7553C20.7467 24.5837 20.867 25.4463 21.2594 26.1961C21.6517 26.9458 22.2919 27.5363 23.0709 27.867C23.8498 28.1976 24.7193 28.2479 25.5312 28.0094C26.3431 27.7708 27.0471 27.2581 27.5234 26.5586L28.2197 27.0327Z"
+              fill="white"
+            />
+            <path
+              d="M23.7068 22.1292C24.2553 21.9457 24.8504 21.9581 25.3909 22.1642C25.9313 22.3702 26.3835 22.7574 26.6705 23.2595C26.9575 23.7617 27.0615 24.3478 26.9648 24.918C26.8681 25.4883 26.5767 26.0074 26.1402 26.3868C25.7037 26.7663 25.1491 26.9826 24.5709 26.999C23.9928 27.0154 23.4268 26.8309 22.9695 26.4768C22.5122 26.1227 22.1918 25.621 22.0629 25.0571C21.934 24.4933 22.0046 23.9022 22.2627 23.3846L23.1394 23.8217C22.9825 24.1365 22.9395 24.4959 23.0179 24.8388C23.0963 25.1817 23.2911 25.4868 23.5693 25.7022C23.8474 25.9175 24.1916 26.0297 24.5431 26.0198C24.8947 26.0098 25.232 25.8782 25.4975 25.6475C25.7629 25.4167 25.9402 25.101 25.999 24.7543C26.0578 24.4075 25.9945 24.051 25.82 23.7456C25.6454 23.4403 25.3704 23.2048 25.0418 23.0795C24.7131 22.9542 24.3512 22.9467 24.0176 23.0583L23.7068 22.1292Z"
+              fill="white"
+            />
+            <circle
+              cx="24.5"
+              cy="24.5"
+              r="0.5"
+              transform="rotate(-180 24.5 24.5)"
+              fill="white"
+            />
+          </svg>
+          Portfólio
+        </a>
+        <nav className="flex items-center gap-16">
+          <a
+            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:bottom-0"
+            href="#projects"
+          >
+            Projetos
           </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
+          <a
+            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:bottom-0"
+            href="#technologies"
           >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
+            Tecnologias
+          </a>
+          <a
+            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:bottom-0"
+            href="about"
           >
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            Sobre mim
+          </a>
+        </nav>
+        <ul className="flex items-center gap-4">
+          <li title="Github">
+            <a
+              href="https://github.com/oCesaum"
+              target="_blank"
+              rel="noopener"
+              className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:-bottom-2"
+            >
+              <svg
+                className="w-7 h-7 fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+              >
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg>
+            </a>
+          </li>
+          <li title="Linkedin">
+            <a
+              href="https://www.linkedin.com/in/cesar-augsuto/"
+              target="_blank"
+              rel="noopener"
+              className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:-bottom-2"
+            >
+              <svg
+                className="w-7 h-7 fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+              </svg>
+            </a>
+          </li>
+          <li title="Instagram">
+            <a
+              href="https://www.instagram.com/_cesaum/"
+              target="_blank"
+              rel="noopener"
+              className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:-bottom-2"
+            >
+              <svg
+                className="w-7 h-7 fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main></main>
+      <footer></footer>
+    </div>
+  );
 }
