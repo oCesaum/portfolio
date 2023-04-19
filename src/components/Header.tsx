@@ -2,15 +2,13 @@ import { Socials } from "./Socials";
 
 export function Header() {
   return (
-    <header className="py-5 px-20 2xl:px-28 text-xl 2xl:text-2xl flex items-center justify-between">
+    <header className="py-5 px-20 2xl:px-28 text-lg 2xl:text-2xl flex items-center justify-between">
       <a
         href="#"
         className="flex items-center gap-3 group relative before:w-0 before:hover:w-20 before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:left-11 before:bottom-0"
       >
         <svg
-          className="group-hover:rotate-180 transition-all duration-700 w-7 xl:w-9 h-7 xl:h-9"
-          width="32"
-          height="32"
+          className="group-hover:rotate-180 transition-all duration-700 w-6 xl:w-9 h-6 xl:h-9"
           viewBox="0 0 49 49"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
