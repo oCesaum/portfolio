@@ -6,10 +6,10 @@ export function Socials() {
           href="https://github.com/oCesaum"
           target="_blank"
           rel="noopener"
-          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:-bottom-2"
+          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:-bottom-2"
         >
           <svg
-            className="w-4 xl:w-6 h-4 xl:h-6 fill-white"
+            className="w-4 xl:w-6 h-4 xl:h-6 fill-zinc-100"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
           >
@@ -22,7 +22,7 @@ export function Socials() {
           href="https://www.linkedin.com/in/cesar-augsuto/"
           target="_blank"
           rel="noopener"
-          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:-bottom-2"
+          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:-bottom-2"
         >
           <svg
             className="w-4 xl:w-6 h-4 xl:h-6 fill-white"
@@ -38,7 +38,7 @@ export function Socials() {
           href="https://www.instagram.com/_cesaum/"
           target="_blank"
           rel="noopener"
-          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-white before:absolute before:-bottom-2"
+          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:-bottom-2"
         >
           <svg
             className="w-4 xl:w-6 h-4 xl:h-6 fill-white"
