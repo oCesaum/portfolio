@@ -1,4 +1,5 @@
 import './globals.css'
+import './scrollbar.css'
 
 export const metadata = {
   title: 'Portfólio - César Augusto',
