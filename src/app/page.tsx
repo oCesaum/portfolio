@@ -1,12 +1,12 @@
-import { Header } from "@/components/Header"
-import { Footer } from "@/components/Footer";
+import Header from "@/components/Header"
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-900 text-zinc-100">
       <Header />
       <main>
-        <section className="relative h-fit lg:h-[800px] 2xl:h-[1000px] p-24 md:p-32 lg:p-40 overflow-hidden">
+        <section className="relative p-24 md:p-32 lg:p-40 overflow-hidden">
           <div className="max-w-sm md:max-w-lg lg:max-w-xl 2xl:max-w-3xl md:space-y-2 lg:space-y-3">
             <h1 className="text-xl md:text-2xl lg:text-4xl 2xl:text-5xl">Portfólio - César Augusto.</h1>
             <h2 className="text-lg md:text-xl lg:text-3xl 2xl:text-4xl">Desenvolvedor Front-ent.</h2>
@@ -133,8 +133,8 @@ export default function Home() {
                 y2="347.071"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="1" stop-color="white" />
+                <stop stopColor="#000000" />
+                <stop offset="1" stopColor="white" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_3_125"
@@ -144,8 +144,8 @@ export default function Home() {
                 y2="264.135"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="white" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="white" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint2_linear_3_125"
@@ -155,8 +155,8 @@ export default function Home() {
                 y2="349.212"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="1" stop-color="white" />
+                <stop stopColor="#000000" />
+                <stop offset="1" stopColor="white" />
               </linearGradient>
               <linearGradient
                 id="paint3_linear_3_125"
@@ -166,9 +166,9 @@ export default function Home() {
                 y2="171.239"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="0.421875" stop-color="white" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="#000000" />
+                <stop offset="0.421875" stopColor="white" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint4_linear_3_125"
@@ -178,10 +178,10 @@ export default function Home() {
                 y2="556.557"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="0.0001" stop-color="#000000" />
-                <stop offset="0.317708" stop-color="white" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="#000000" />
+                <stop offset="0.0001" stopColor="#000000" />
+                <stop offset="0.317708" stopColor="white" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint5_linear_3_125"
@@ -191,9 +191,9 @@ export default function Home() {
                 y2="70.3552"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="0.494792" stop-color="white" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="#000000" />
+                <stop offset="0.494792" stopColor="white" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint6_linear_3_125"
@@ -203,8 +203,8 @@ export default function Home() {
                 y2="524.135"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="white" />
-                <stop offset="0.234375" stop-color="#000000" />
+                <stop stopColor="white" />
+                <stop offset="0.234375" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint7_linear_3_125"
@@ -214,9 +214,9 @@ export default function Home() {
                 y2="335.272"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="0.75" stop-color="white" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="#000000" />
+                <stop offset="0.75" stopColor="white" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint8_linear_3_125"
@@ -226,10 +226,10 @@ export default function Home() {
                 y2="637.701"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="0.0001" stop-color="#000000" />
-                <stop offset="0.317708" stop-color="white" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="#000000" />
+                <stop offset="0.0001" stopColor="#000000" />
+                <stop offset="0.317708" stopColor="white" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint9_linear_3_125"
@@ -239,10 +239,10 @@ export default function Home() {
                 y2="725.162"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="0.0001" stop-color="#000000" />
-                <stop offset="0.317708" stop-color="white" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="#000000" />
+                <stop offset="0.0001" stopColor="#000000" />
+                <stop offset="0.317708" stopColor="white" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
               <linearGradient
                 id="paint10_linear_3_125"
@@ -252,10 +252,10 @@ export default function Home() {
                 y2="361.894"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#000000" />
-                <stop offset="0.0582928" stop-color="white" />
-                <stop offset="1" stop-color="#18181B" />
-                <stop offset="1" stop-color="#000000" />
+                <stop stopColor="#000000" />
+                <stop offset="0.0582928" stopColor="white" />
+                <stop offset="1" stopColor="#18181B" />
+                <stop offset="1" stopColor="#000000" />
               </linearGradient>
             </defs>
           </svg>

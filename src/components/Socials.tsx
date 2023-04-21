@@ -1,6 +1,10 @@
-export function Socials() {
+interface SocialsProps {
+  componentType: string;
+}
+
+export default function Socials( { componentType }: SocialsProps ) {
   return (
-    <ul className="flex items-center gap-4">
+    <ul className={`${ componentType === "header" ? ("hidden md:flex") : ("flex") } items-center gap-4`}>
       <li title="Github">
         <a
           href="https://github.com/oCesaum"
