@@ -1,22 +1,23 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-zinc-100">
+    <div className="min-h-screen text-zinc-100 overflow-hidden">
       <Header />
       <main>
-        <section className="relative p-24 md:p-32 lg:p-40 overflow-hidden">
-          <div className="max-w-sm md:max-w-lg lg:max-w-xl 2xl:max-w-3xl md:space-y-2 lg:space-y-3">
-            <h1 className="text-xl md:text-2xl lg:text-4xl 2xl:text-5xl">Portfólio - César Augusto.</h1>
-            <h2 className="text-lg md:text-xl lg:text-3xl 2xl:text-4xl">Desenvolvedor Front-ent.</h2>
-            <div className="text-base 2xl:text-xl hidden md:block">
+        <section id="#" className="relative p-16 md:p-28 lg:p-32">
+          <div className="max-w-xl md:max-w-lg lg:max-w-xl 2xl:max-w-3xl space-y-3 md:space-y-2 lg:space-y-3">
+            <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl">Portfólio - César Augusto.</h1>
+            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Desenvolvedor Front-ent.</h2>
+            <div className="md:text-base 2xl:text-xl hidden md:block">
               <p>Olá! Sou um desenvolvedor front-end apaixonado por criar experiências incríveis na web. Atualmente, estou aprimorando meus conhecimentos para me tornar um desenvolvedor full stack.</p>
-              <p>Desenvolvi este portfólio com muito carinho e dedicação, para que você possa conhecer melhor meu trabalho e habilidades técnicas.</p>
-              <p>Se você gostou do que viu e está interessado em trabalhar comigo ou discutir uma oportunidade de colaboração, por favor, não hesite em entrar em contato. Ficarei feliz em conversar com você!</p>
+              <p>Desenvolvi este portfólio com muita dedicação, para que você possa conhecer melhor meu trabalho e habilidades técnicas.</p>
+              <p>Se gostou do que viu e está interessado em trabalhar comigo ou discutir uma oportunidade de colaboração, por favor, não hesite em entrar em contato. Ficarei feliz em conversar com você!</p>
               <p>Muito obrigado pela sua atenção e espero que aprecie meu portfólio.</p>
             </div>
-            <div className="text-xs md:text-sm block md:hidden">
+            <div className="text-base md:text-sm block md:hidden">
               <p>Olá! Sou um desenvolvedor front-end buscando me tornar um profissional full stack.</p>
               <p>Criei este portfólio para mostrar minhas habilidades e projetos realizados.</p>
               <p>Se quiser entrar em contato, ficarei feliz em conversar. Obrigado pela atenção!</p>
@@ -24,7 +25,7 @@ export default function Home() {
 
           </div>
           <svg
-            className="absolute top-10 md:top-6 lg:-top-48 2xl:-top-96 -right-40 lg:-right-48 2xl:-right-20 h-72 md:h-[400px] lg:h-[1200px] 2xl:h-[1600px]"
+            className="absolute top-10 md:top-6 lg:-top-48 2xl:-top-96 -right-40 lg:-right-48 2xl:-right-20 h-96 md:h-[400px] lg:h-[1200px] 2xl:h-[1600px] -z-10"
             width="686"
             height="760"
             viewBox="0 0 686 760"
@@ -259,6 +260,10 @@ export default function Home() {
               </linearGradient>
             </defs>
           </svg>
+        </section>
+        <section id="projects" className="px-16 md:px-28 lg:px-32 pb-24 md:pb-32 lg:pb-40">
+          <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Projetos</h2>
+          <Projects />
         </section>
       </main>
       <Footer />
