@@ -2,6 +2,7 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
+import AdditionalTechnologiesAndSkills from "@/components/AdditionalTechnologiesAndSkills";
 
 export default function Home() {
   return (
@@ -267,10 +268,11 @@ export default function Home() {
           <Projects />
         </section>
         <section id="technologies" className="px-16 md:px-28 lg:px-32 pb-24 md:pb-32 lg:pb-40">
-          <div className="mb-10 flex items-center justify-between flex-wrap sm:gap-2 md:gap-3">
-            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Tecnologias</h2>
-          </div>
+          <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Tecnologias</h2>
           <Technologies />
+          <h3 className="mt-10 text-2xl md:text-lg lg:text-2xl 2xl:text-3xl">Tecnologias e habilidades adicionais</h3>
+          <h4 className="mb-8 text-sm md:text-[10px] lg:text-sm 2xl:text-lg text-zinc-400">Em aprendizado</h4>
+          <AdditionalTechnologiesAndSkills />
         </section>
       </main>
       <Footer />

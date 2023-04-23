@@ -11,7 +11,7 @@ return (
           width={1080}
           quality={100}
         />
-        <h3 className="mx-auto uppercase text-center text-xl md:text-sm lg:text-base xl:text-lg 2xl:text-2xl w-fit relative before:w-full before:h-0.5 before:bg-zinc-300 before:absolute before:bottom-0 before:rounded-full">Nome do projeto</h3>
+        <h3 className="mx-auto uppercase text-center text-xl md:text-sm lg:text-base xl:text-lg 2xl:text-2xl w-fit">Nome do projeto</h3>
         <p className="text-base md:text-sm 2xl:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Dignissimos, facilis quam molestias officiis error commodi possimus
