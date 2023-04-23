@@ -26,8 +26,8 @@ export default function Navbar() {
         Sobre mim
       </a>
     </nav>
-    <div>
-      <button className="block md:hidden">
+    <div className="block md:hidden">
+      <button>
         <svg
           className="fill-zinc-300 w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
