@@ -1,9 +1,4 @@
-// 'use client';
-// import { useState } from 'react';
-
 export default function Navbar() {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
   return (
     <>
       <nav className="hidden md:flex items-center gap-16">
