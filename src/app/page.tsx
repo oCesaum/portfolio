@@ -10,7 +10,7 @@ export default function Home() {
       <main>
         <section id="#" className="relative p-16 md:p-28 lg:p-32">
           <div className="max-w-xl md:max-w-lg lg:max-w-xl 2xl:max-w-3xl space-y-3 md:space-y-2 lg:space-y-3">
-            <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl">Portfólio - César Augusto.</h1>
+            <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl">César Augusto.</h1>
             <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Desenvolvedor Front-ent.</h2>
             <div className="md:text-base 2xl:text-xl hidden md:block">
               <p>Olá! Sou um desenvolvedor front-end apaixonado por criar experiências incríveis na web. Atualmente, estou aprimorando meus conhecimentos para me tornar um desenvolvedor full stack.</p>
@@ -268,8 +268,7 @@ export default function Home() {
         </section>
         <section id="technologies" className="px-16 md:px-28 lg:px-32 pb-24 md:pb-32 lg:pb-40">
           <div className="mb-10 flex items-center justify-between flex-wrap sm:gap-2 md:gap-3">
-            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Pricipais tecnologias</h2>
-            <p className="md:text-xs lg:text-sm xl:text-base 2xl:text-xl w-full md:w-2/4">As tecnologias citadas abaixo estão em ordem de aprendizado, vindo em primeiro lugar a que tenho maior experiência, logo em seguida são as que já utilizo e estou aprimorando.</p>
+            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Tecnologias</h2>
           </div>
           <Technologies />
         </section>

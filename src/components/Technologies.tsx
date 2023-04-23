@@ -1,7 +1,7 @@
 export default function Technologies() {
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 justify-items-center gap-10">
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+    <div className="sm:grid grid-cols-3 justify-items-center flex lg:flex flex-wrap gap-5 lg:gap-10 xl:gap-4 justify-center">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#e44d26] hidden group-hover:block">HTML5</p>
         <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
           <path
@@ -22,7 +22,7 @@ export default function Technologies() {
           ></path>
         </svg>
       </div>
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#1572b6] hidden group-hover:block">CSS3</p>
         <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
           <path
@@ -51,7 +51,7 @@ export default function Technologies() {
           ></path>
         </svg>
       </div>
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#f0db4f] hidden group-hover:block">Javascript</p>
         <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
           <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
@@ -61,7 +61,7 @@ export default function Technologies() {
           ></path>
         </svg>
       </div>
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#61dafb] hidden group-hover:block">React</p>
         <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
           <g fill="#61DAFB">
@@ -70,7 +70,7 @@ export default function Technologies() {
           </g>
         </svg>
       </div>
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#38bdf8] hidden group-hover:block">Tailwind</p>
         <svg
           width={56}
@@ -89,7 +89,7 @@ export default function Technologies() {
           ></path>
         </svg>
       </div>
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#000] hidden group-hover:block">Github</p>
         <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
           <path
@@ -100,7 +100,7 @@ export default function Technologies() {
           <path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path>
         </svg>
       </div>
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#007acc] hidden group-hover:block">Typescript</p>
         <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
           <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
@@ -111,10 +111,16 @@ export default function Technologies() {
           ></path>
         </svg>
       </div>
-      <div className="w-24 h-24 2xl:w-36 2xl:h-36 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
         <p className="absolute -top-5 text-sm font-bold text-[#000] hidden group-hover:block">Nextjs</p>
         <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
           <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"></path>
+        </svg>
+      </div>
+      <div className="w-24 h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-center shadow-md shadow-zinc-950 rounded-full hover:scale-110 transition relative group">
+        <p className="absolute -top-5 text-sm font-bold text-[#07a9da] hidden group-hover:block">Wordpress</p>
+        <svg className="w-14 h-14 2xl:w-20 2xl:h-20" width={56} height={56} viewBox="0 0 128 128">
+            <path fillRule="evenodd" clipRule="evenodd" fill="#07a9da" d="M64.094 126.224c34.275-.052 62.021-27.933 62.021-62.325 0-33.833-27.618-61.697-60.613-62.286C30.85.995 1.894 29.113 1.885 63.21c-.01 35.079 27.612 63.064 62.209 63.014zM63.993 4.63c32.907-.011 59.126 26.725 59.116 60.28-.011 31.679-26.925 58.18-59.092 58.187-32.771.007-59.125-26.563-59.124-59.608.002-32.193 26.766-58.848 59.1-58.859zM39.157 35.896c.538 1.793-.968 2.417-2.569 2.542-1.685.13-3.369.257-5.325.406 6.456 19.234 12.815 38.183 19.325 57.573.464-.759.655-.973.739-1.223 3.574-10.682 7.168-21.357 10.651-32.069.318-.977.16-2.271-.188-3.275-1.843-5.32-4.051-10.524-5.667-15.908-1.105-3.686-2.571-6.071-6.928-5.644-.742.073-1.648-1.524-2.479-2.349 1.005-.6 2.003-1.704 3.017-1.719a849.593 849.593 0 0126.618.008c1.018.017 2.016 1.15 3.021 1.765-.88.804-1.639 2.01-2.668 2.321-1.651.498-3.482.404-5.458.58l19.349 57.56c2.931-9.736 5.658-18.676 8.31-27.639 2.366-8.001.956-15.473-3.322-22.52-1.286-2.119-2.866-4.175-3.595-6.486-.828-2.629-1.516-5.622-1.077-8.259.745-4.469 4.174-6.688 8.814-7.113C74.333.881 34.431 9.317 19.728 34.922c5.66-.261 11.064-.604 16.472-.678 1.022-.013 2.717.851 2.957 1.652zm10.117 77.971c-.118.345-.125.729-.218 1.302 10.943 3.034 21.675 2.815 32.659-.886l-16.78-45.96c-5.37 15.611-10.52 30.575-15.661 45.544zm-8.456-2.078l-25.281-69.35c-11.405 22.278-2.729 56.268 25.281 69.35zm76.428-44.562c.802-10.534-2.832-25.119-5.97-27.125-.35 3.875-.106 8.186-1.218 12.114-2.617 9.255-5.817 18.349-8.899 27.468-3.35 9.912-6.832 19.779-10.257 29.666 16.092-9.539 24.935-23.618 26.344-42.123z"></path>
         </svg>
       </div>
     </div>
