@@ -1,6 +1,7 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
+import Technologies from "@/components/Technologies";
 
 export default function Home() {
   return (
@@ -262,8 +263,15 @@ export default function Home() {
           </svg>
         </section>
         <section id="projects" className="px-16 md:px-28 lg:px-32 pb-24 md:pb-32 lg:pb-40">
-          <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Projetos</h2>
+          <h2 className="mb-8 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Projetos</h2>
           <Projects />
+        </section>
+        <section id="technologies" className="px-16 md:px-28 lg:px-32 pb-24 md:pb-32 lg:pb-40">
+          <div className="mb-8 flex items-center justify-between flex-wrap sm:gap-2 md:gap-3">
+            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Pricipais tecnologias</h2>
+            <p className="md:text-xs lg:text-sm xl:text-base 2xl:text-xl w-full md:w-2/4">As tecnologias citadas abixo estão em ordem de aprendizado, vindo em primeiro lugar a que tenho maior experiência, logo em seguida são as que já utilizo e estou aprimorando.</p>
+          </div>
+          <Technologies />
         </section>
       </main>
       <Footer />

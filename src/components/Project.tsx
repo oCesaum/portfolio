@@ -3,7 +3,7 @@ import ProjectImage from "../../public/project-image.jpg"
 
 export default function Project () {
 return (
-    <div className="w-[540px] p-6 mt-8 space-y-4 max-w-full md:p-4 md:space-y-2 md:min-w-[250px] md:mt-4 lg:w-[360px] lg:mt-4 xl:w-[416px] xl:mt-5 xl:space-y-3 2xl:w-[624px] 2xl:p-6 2xl:mt-8 2xl:space-y-4 rounded-lg shadow-lg shadow-zinc-950">
+    <div className="p-6 space-y-4 max-w-full md:p-4 md:space-y-2 md:min-w-[250px] lg:w-[360px] xl:w-[416px] xl:space-y-3 2xl:w-[624px] 2xl:p-6 2xl:space-y-4 rounded-lg shadow-lg shadow-zinc-950">
         <Image
           className="rounded-md w-full"
           src={ProjectImage}
@@ -18,7 +18,7 @@ return (
           illo ab quo praesentium maiores adipisci est quisquam dolores vitae
           labore, suscipit deleniti nihil.
         </p>
-        <button className="px-6 md:px-4 lg:px-6 py-2 rounded-full shadow-lg bg-zinc-800 shadow-zinc-950 text-base md:text-sm 2xl:text-base text-center transition-transform hover:scale-110">Ver projeto</button>
+        <a href="#" target="_blank" rel="noopener" className="inline-block px-6 md:px-4 lg:px-6 py-2 rounded-full shadow-lg bg-zinc-800 shadow-zinc-950 text-base md:text-sm 2xl:text-base text-center transition-transform hover:scale-110">Ver projeto</a>
     </div>
   );
 };
