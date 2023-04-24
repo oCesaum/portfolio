@@ -24,7 +24,6 @@ export default function Home() {
               <p>Criei este portfólio para mostrar minhas habilidades e projetos realizados.</p>
               <p>Se quiser entrar em contato, ficarei feliz em conversar. Obrigado pela atenção!</p>
             </div>
-
           </div>
           <svg
             className="absolute top-10 md:top-6 lg:-top-48 2xl:-top-96 -right-40 lg:-right-48 2xl:-right-20 h-96 md:h-[400px] lg:h-[1200px] 2xl:h-[1600px] -z-10"
