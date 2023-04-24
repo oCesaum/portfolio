@@ -13,7 +13,7 @@ export default function Home() {
           <div className="max-w-xl md:max-w-lg lg:max-w-xl 2xl:max-w-3xl space-y-3 md:space-y-2 lg:space-y-3">
             <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl">César Augusto.</h1>
             <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Desenvolvedor Front-ent.</h2>
-            <div className="md:text-base 2xl:text-xl hidden md:block">
+            <div className="md:text-base 2xl:text-xl hidden md:block space-y-1">
               <p>Olá! Sou um desenvolvedor front-end apaixonado por criar experiências incríveis na web. Atualmente, estou aprimorando meus conhecimentos para me tornar um desenvolvedor full stack.</p>
               <p>Desenvolvi este portfólio com muita dedicação, para que você possa conhecer melhor meu trabalho e habilidades técnicas.</p>
               <p>Se gostou do que viu e está interessado em trabalhar comigo ou discutir uma oportunidade de colaboração, por favor, não hesite em entrar em contato. Ficarei feliz em conversar com você!</p>
