@@ -8,6 +8,7 @@ return (
           className="rounded-md w-full"
           src={ProjectImage}
           alt="Imagem aleatória 1"
+          priority
           width={1080}
           quality={100}
         />
