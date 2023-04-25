@@ -4,7 +4,7 @@ import Socials from "./Socials";
 export default function Header() {
   
   return (
-    <header className="py-5 px-16 2xl:px-28 text-2xl md:text-lg 2xl:text-2xl flex items-center justify-between">
+    <header className="py-5 px-6 2xl:px-28 text-2xl md:text-lg 2xl:text-2xl flex items-center justify-between">
       <a
         href="#"
         className="flex items-center gap-3 group relative before:w-0 before:hover:w-[90px] md:before:hover:w-[70px] lg:before:hover:w-[70px] 2xl:before:hover:w-24 before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:left-12 md:before:left-9 lg:before:hover:left-12 before:bottom-0"
