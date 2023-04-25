@@ -38,7 +38,7 @@ export default function Timeline() {
         )}
         <svg className="w-12 h-12 fill-zinc-400 absolute top-[calc(100%-5px)] left-1/2 -translate-x-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
       </div>
-      <p className="w-2/3 p-6 text-center mx-auto mt-8">Programar não é “algo” tão simples, mas é muito satisfatório! Cada vírgula importa e está ali por algum motivo, sou muito grato por ter esta experiência e poder sonhar com o futuro que me espera!</p>
+      <p className="w-2/3 p-6 mx-auto mt-8">Programar não é “algo” tão simples, mas é muito satisfatório! Cada vírgula importa e está ali por algum motivo, sou muito grato por ter esta experiência e poder sonhar com o futuro que me espera!</p>
     </div>
   );
 }
