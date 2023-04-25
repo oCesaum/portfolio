@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
 import AdditionalTechnologiesAndSkills from "@/components/AdditionalTechnologiesAndSkills";
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
       <main>
         <section id="home" className="relative p-6 md:p-28 lg:p-32">
           <div className="max-w-xl md:max-w-lg lg:max-w-xl 2xl:max-w-3xl space-y-3 md:space-y-2 lg:space-y-3">
-            <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl">César Augusto.</h1>
-            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Desenvolvedor Front-ent.</h2>
+            <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl font-semibold">César Augusto.</h1>
+            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Desenvolvedor Front-ent.</h2>
             <div className="md:text-base 2xl:text-xl hidden md:block space-y-1">
               <p>Olá! Sou um desenvolvedor front-end apaixonado por criar experiências incríveis na web. Atualmente, estou aprimorando meus conhecimentos para me tornar um desenvolvedor full stack.</p>
               <p>Desenvolvi este portfólio com muita dedicação, para que você possa conhecer melhor meu trabalho e habilidades técnicas.</p>
@@ -263,18 +264,19 @@ export default function Home() {
           </svg>
         </section>
         <section id="projects" className="px-6 md:px-28 lg:px-32 pb-10 md:pb-24 lg:pb-32">
-          <h2 className="mb-8 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Projetos</h2>
+          <h2 className="mb-8 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Projetos</h2>
           <Projects />
         </section>
         <section id="technologies" className="px-6 md:px-28 lg:px-32 pb-10 md:pb-24 lg:pb-32">
-          <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Tecnologias</h2>
+          <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Tecnologias</h2>
           <Technologies />
           <h3 className="mt-10 text-2xl md:text-lg lg:text-2xl 2xl:text-3xl">Tecnologias e habilidades adicionais</h3>
           <h4 className="mb-8 text-sm md:text-[10px] lg:text-sm 2xl:text-lg text-zinc-400">Em aprendizado</h4>
           <AdditionalTechnologiesAndSkills />
         </section>
         <section id="about" className="px-6 md:px-28 lg:px-32 pb-10 md:pb-24 lg:pb-32">
-          <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Sobre mim</h2>
+          <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Sobre mim</h2>
+          <Timeline />
         </section>
       </main>
       <Footer />
