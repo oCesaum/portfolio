@@ -3,7 +3,7 @@ import ProjectImage from "../../public/project-image.jpg"
 
 export default function Project () {
 return (
-    <div className="p-6 space-y-4 max-w-full md:p-4 md:space-y-2 md:min-w-[250px] lg:w-[360px] xl:w-[416px] xl:space-y-3 2xl:w-[624px] 2xl:p-6 2xl:space-y-4 rounded-lg shadow-md shadow-zinc-950">
+    <div className="p-6 space-y-4 max-w-full md:p-4 md:space-y-2 md:min-w-[250px] lg:w-[360px] xl:w-[416px] xl:space-y-3 2xl:w-[624px] 2xl:p-6 2xl:space-y-4 rounded-lg shadow-sm hover:shadow-md shadow-zinc-950 hover:shadow-zinc-950">
         <Image
           className="rounded-md w-full"
           src={ProjectImage}

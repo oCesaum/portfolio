@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen text-zinc-100 overflow-hidden">
       <Header />
       <main>
-        <section id="#" className="relative p-16 md:p-28 lg:p-32">
+        <section id="home" className="relative p-16 md:p-28 lg:p-32">
           <div className="max-w-xl md:max-w-lg lg:max-w-xl 2xl:max-w-3xl space-y-3 md:space-y-2 lg:space-y-3">
             <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl">César Augusto.</h1>
             <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl">Desenvolvedor Front-ent.</h2>
