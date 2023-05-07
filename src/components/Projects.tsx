@@ -6,16 +6,16 @@ import Image from "../../public/project-image.jpg"
 export default function Projects() {
   const projects = [
     {
+      projectName: 'Mapa Tátoco DMZ',
+      projectDescription: 'Este projeto está sendo feito para trazer todas as informações sobre o modo DMZ do Call of Duty e ajudar os jogadores brasileiros.',
+      projectLink: 'https://mapa-tatico-dmz.vercel.app/',
+      projectImageUrl: Image,
+    },
+    {
       projectName: 'Tailwind Spotify',
       projectDescription: 'O Tailwind Spotify é um projeto para aprimoramento das minhas habilidades em Tailwind, fazendo assim um clone do Spotify. O projeto ainda não está concluído, mas clique no link para ver como está ficando.',
       projectLink: 'https://tailwind-spotify-phi.vercel.app/',
       projectImageUrl: TailwindSpotify,
-    },
-    {
-      projectName: 'Projeto 2',
-      projectDescription: 'Descrição do projeto 2... Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis repellat adipisci, in, autem debitis commodi ab rerum, culpa natus inventore molestias distinctio ipsa assumenda libero quisquam fugiat modi obcaecati.',
-      projectLink: '/#projects',
-      projectImageUrl: Image,
     },
     {
       projectName: 'Projeto 3',

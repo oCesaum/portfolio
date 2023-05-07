@@ -24,7 +24,7 @@ const Project = ({
           height={325}
           quality={100}
         />
-      <h3 className="mx-auto uppercase text-center text-xl md:text-sm lg:text-base xl:text-lg 2xl:text-2xl w-fit">
+      <h3 className="mx-auto text-center text-xl md:text-sm lg:text-base xl:text-lg 2xl:text-2xl w-fit">
         {projectName}
       </h3>
       <p className="text-base md:text-sm 2xl:text-base">{projectDescription}</p>
