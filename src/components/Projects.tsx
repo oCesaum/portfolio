@@ -1,7 +1,8 @@
 import Project from "./Project";
 
-import TailwindSpotify from "../../public/tailwind-spotify.png"
 import Image from "../../public/project-image.jpg"
+import TailwindSpotify from "../../public/tailwind-spotify.png"
+import MapaTaticoDMZ from "../../public/mapa-tatico-dmz.png"
 
 export default function Projects() {
   const projects = [
@@ -9,7 +10,7 @@ export default function Projects() {
       projectName: 'Mapa Tátoco DMZ',
       projectDescription: 'Este projeto está sendo feito para trazer todas as informações sobre o modo DMZ do Call of Duty e ajudar os jogadores brasileiros.',
       projectLink: 'https://mapa-tatico-dmz.vercel.app/',
-      projectImageUrl: Image,
+      projectImageUrl: MapaTaticoDMZ,
     },
     {
       projectName: 'Tailwind Spotify',
