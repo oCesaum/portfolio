@@ -3,7 +3,6 @@ import Project from "./Project";
 import Image from "../../public/project-image.jpg"
 import FastCart from "../../public/fast-cart.png"
 import TailwindSpotify from "../../public/tailwind-spotify.png"
-import MapaTaticoDMZ from "../../public/mapa-tatico-dmz.png"
 
 export default function Projects() {
   const projects = [
