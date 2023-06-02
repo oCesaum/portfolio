@@ -1,16 +1,17 @@
 import Project from "./Project";
 
 import Image from "../../public/project-image.jpg"
+import FastCart from "../../public/fast-cart.png"
 import TailwindSpotify from "../../public/tailwind-spotify.png"
 import MapaTaticoDMZ from "../../public/mapa-tatico-dmz.png"
 
 export default function Projects() {
   const projects = [
     {
-      projectName: 'Mapa Tátoco DMZ',
-      projectDescription: 'Este projeto está sendo feito para trazer todas as informações sobre o modo DMZ do Call of Duty e ajudar os jogadores brasileiros.',
-      projectLink: 'https://mapa-tatico-dmz.vercel.app/',
-      projectImageUrl: MapaTaticoDMZ,
+      projectName: 'Fast Cart',
+      projectDescription: 'Um projeto feito para facilitar a criação de um carrinho de compras em sites de venda, apenas adicionando o script o carrinho é criado automaticamente.',
+      projectLink: 'https://fast-cart-landing-page.vercel.app/',
+      projectImageUrl: FastCart,
     },
     {
       projectName: 'Tailwind Spotify',
@@ -20,13 +21,13 @@ export default function Projects() {
     },
     {
       projectName: 'Projeto 3',
-      projectDescription: 'Descrição do projeto 2... Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis repellat adipisci, in, autem debitis commodi ab rerum, culpa natus inventore molestias distinctio ipsa assumenda libero quisquam fugiat modi obcaecati.',
+      projectDescription: 'Descrição do projeto 3... Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis repellat adipisci, in, autem debitis commodi ab rerum, culpa natus inventore molestias distinctio ipsa assumenda libero quisquam fugiat modi obcaecati.',
       projectLink: '/#projects',
       projectImageUrl: Image,
     },
     {
       projectName: 'Projeto 4',
-      projectDescription: 'Descrição do projeto 2... Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis repellat adipisci, in, autem debitis commodi ab rerum, culpa natus inventore molestias distinctio ipsa assumenda libero quisquam fugiat modi obcaecati.',
+      projectDescription: 'Descrição do projeto 4... Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis repellat adipisci, in, autem debitis commodi ab rerum, culpa natus inventore molestias distinctio ipsa assumenda libero quisquam fugiat modi obcaecati.',
       projectLink: '/#projects',
       projectImageUrl: Image,
     },

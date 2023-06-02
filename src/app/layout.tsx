@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body>{children}</body>
+      <body className='max-w-[1600px] mx-auto bg-zinc-900'>{children}</body>
     </html>
   )
 }
