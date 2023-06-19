@@ -3,20 +3,20 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #18181b;
+  background: #d4d4d8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3a3a3b;
+  background-color: #09090b;
   border-radius: 6px;
-  border: 2px solid #18181b;
+  border: 2px solid #d4d4d8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #2e2e32;
+  background-color: #040406;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3a3a3b #18181b;
+  scrollbar-color: #09090b #d4d4d8;
 }

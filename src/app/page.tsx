@@ -1,29 +1,21 @@
-import Header from "@/components/Header"
+import AdditionalTechnologiesAndSkills from "@/components/AdditionalTechnologiesAndSkills";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
-import AdditionalTechnologiesAndSkills from "@/components/AdditionalTechnologiesAndSkills";
 import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
-    <div className="min-h-screen text-zinc-100 overflow-hidden">
+    <div className="min-h-screen text-zinc-950 overflow-hidden">
       <Header />
       <main>
-        <section id="home" className="relative p-6 md:p-28 lg:p-32">
-          <div className="max-w-xl md:max-w-lg lg:max-w-xl 2xl:max-w-3xl space-y-3 md:space-y-2 lg:space-y-3">
-            <h1 className="text-4xl md:text-2xl lg:text-4xl 2xl:text-5xl font-semibold">César Augusto.</h1>
-            <h2 className="text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Desenvolvedor Front-ent.</h2>
-            <div className="md:text-base 2xl:text-xl hidden md:block space-y-1">
+        <section id="home" className="relative p-6 md:p-28 lg:p-32 min-h-screen">
+          <div className="max-w-xl md:max-w-lg lg:max-w-xl 2xl:max-w-3xl">
+            <h1 className="text-4xl uppercase">César Augusto</h1>
+            <h2 className="text-7xl font-bold uppercase">Desenvolvedor <span className="text-transparent bg-gradient-to-r from-primary via-90% via-tertiary to-primary bg-clip-text webkit-text-fill-color-transparent animate-background-pan bg-200%">front-end</span></h2>
+            <div className="md:text-base 2xl:text-xl">
               <p>Olá! Sou um desenvolvedor front-end apaixonado por criar experiências incríveis na web. Atualmente, estou aprimorando meus conhecimentos para me tornar um desenvolvedor full stack.</p>
-              <p>Desenvolvi este portfólio com muita dedicação, para que você possa conhecer melhor meu trabalho e habilidades técnicas.</p>
-              <p>Se gostou do que viu e está interessado em trabalhar comigo ou discutir uma oportunidade de colaboração, por favor, não hesite em entrar em contato. Ficarei feliz em conversar com você!</p>
-              <p>Muito obrigado pela sua atenção e espero que aprecie meu portfólio.</p>
-            </div>
-            <div className="text-base md:text-sm block md:hidden">
-              <p>Olá! Sou um desenvolvedor front-end buscando me tornar um profissional full stack.</p>
-              <p>Criei este portfólio para mostrar minhas habilidades e projetos realizados.</p>
-              <p>Se quiser entrar em contato, ficarei feliz em conversar. Obrigado pela atenção!</p>
             </div>
           </div>
           <svg
@@ -267,14 +259,14 @@ export default function Home() {
           <h2 className="mb-8 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Projetos</h2>
           <Projects />
         </section>
-        <section id="technologies" className="px-6 md:px-28 lg:px-32 pb-10 md:pb-24 lg:pb-32">
-          <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Tecnologias</h2>
+        <section id="technologies" className="px-6 md:px-28 lg:px-32 pb-10 md:pb-24 lg:pb-32 bg-zinc-950 text-zinc-100 pt-20">
+          <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold uppercase">Tecnologias</h2>
           <Technologies />
-          <h3 className="mt-10 text-2xl md:text-lg lg:text-2xl 2xl:text-3xl">Tecnologias e habilidades adicionais</h3>
+          <h3 className="mt-10 text-xl font-semibold uppercase">Tecnologias e habilidades adicionais</h3>
           <h4 className="mb-8 text-sm md:text-[10px] lg:text-sm 2xl:text-lg text-zinc-400">Em aprendizado</h4>
           <AdditionalTechnologiesAndSkills />
         </section>
-        <section id="about" className="px-6 md:px-28 lg:px-32 pb-10 md:pb-24 lg:pb-32">
+        <section id="about" className="px-6 md:px-28 lg:px-32 pb-10 md:pb-24 lg:pb-32 pt-20">
           <h2 className="mb-10 text-3xl md:text-xl lg:text-3xl 2xl:text-4xl font-semibold">Sobre mim</h2>
           <Timeline />
         </section>

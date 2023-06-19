@@ -15,19 +15,19 @@ const Navbar = () => {
     <>
       <nav className="hidden md:flex items-center gap-16">
       <a
-        className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:bottom-0"
+        className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-950 before:absolute before:bottom-0"
         href="#projects"
       >
         Projetos
       </a>
       <a
-        className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:bottom-0"
+        className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-950 before:absolute before:bottom-0"
         href="#technologies"
       >
         Tecnologias
       </a>
       <a
-        className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:bottom-0"
+        className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-950 before:absolute before:bottom-0"
         href="#about"
       >
         Sobre mim
@@ -53,19 +53,19 @@ const Navbar = () => {
         </button>
           <nav className="flex flex-col items-center gap-16">
           <a
-            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:bottom-0"
+            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-950 before:absolute before:bottom-0"
             href="#projects"
           >
             Projetos
           </a>
           <a
-            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:bottom-0"
+            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-950 before:absolute before:bottom-0"
             href="#technologies"
           >
             Tecnologias
           </a>
           <a
-            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-100 before:absolute before:bottom-0"
+            className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-950 before:absolute before:bottom-0"
             href="#about"
           >
             Sobre mim

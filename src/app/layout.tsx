@@ -1,5 +1,12 @@
+import { Poppins } from 'next/font/google'
+
 import './globals.css'
 import './scrollbar.css'
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900',]
+})
 
 export const metadata = {
   title: 'Portfólio - César Augusto',
@@ -13,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className='max-w-[1600px] mx-auto bg-zinc-900'>{children}</body>
+      <body className={`max-w-[1600px] mx-auto bg-zinc-300 ${poppins.className}`}>{children}</body>
     </html>
   )
 }
