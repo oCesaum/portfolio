@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: 'Portfólio - César Augusto',
-  description: 'Meu portfólio em React, gerado via "create next app" e utilizando Tailwind',
+  description: 'Meu portfólio em React, gerado via "create next app" e utilizando Tailwind e Typescrit',
 }
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`max-w-[1600px] mx-auto bg-zinc-300 ${poppins.className}`}>{children}</body>
+      <body className={`max-w-[1600px] mx-auto bg-zinc-100 ${poppins.className}`}>{children}</body>
     </html>
   )
 }
