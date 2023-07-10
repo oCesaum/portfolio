@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`mx-auto max-w-[1600px] bg-gradient-to-bl from-gray-100 to-gray-300 ${poppins.className}`}
+        className={`mx-auto max-w-[1600px] bg-gradient-to-bl from-gray-300 to-gray-100 ${poppins.className}`}
       >
         {children}
       </body>

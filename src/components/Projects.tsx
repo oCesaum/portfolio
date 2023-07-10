@@ -1,3 +1,4 @@
+import CalculadoraTG from "../../public/calculadora-taxa-gravidade.png";
 import FastCart from "../../public/fast-cart.png";
 import Image from "../../public/project-image.jpg";
 import TailwindSpotify from "../../public/tailwind-spotify.png";
@@ -6,7 +7,7 @@ import Project from "./Project";
 export default function Projects() {
   const projects = [
     {
-      projectName: "Fast Cart",
+      projectName: "Fast Cart - Landing Page",
       projectDescription:
         "Um projeto feito para facilitar a criação de um carrinho de compras em sites de venda, apenas adicionando o script o carrinho é criado automaticamente.",
       projectLink: "https://fast-cart-landing-page.vercel.app/",
@@ -20,16 +21,16 @@ export default function Projects() {
       projectImageUrl: TailwindSpotify,
     },
     {
-      projectName: "Projeto 3",
+      projectName: "Calculadora Taxa de Gravidade",
       projectDescription:
-        "Descrição do projeto 3... Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis repellat adipisci, in, autem debitis commodi ab rerum, culpa natus inventore molestias distinctio ipsa assumenda libero quisquam fugiat modi obcaecati.",
-      projectLink: "/#projects",
-      projectImageUrl: Image,
+        "Uma calculadora simples feita para ajudar na produtividade dos técnicos em segurança do trabalho. Apesar de simples o projeto foi utilizado por uma turma de alunos cursando o técnico de segurança.",
+      projectLink: "https://calculadora-hht.vercel.app/",
+      projectImageUrl: CalculadoraTG,
     },
     {
-      projectName: "Projeto 4",
+      projectName: "Projeto 4 - Em construção",
       projectDescription:
-        "Descrição do projeto 4... Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis repellat adipisci, in, autem debitis commodi ab rerum, culpa natus inventore molestias distinctio ipsa assumenda libero quisquam fugiat modi obcaecati.",
+        "Projeto em construção, imagem meramente ilustrativa",
       projectLink: "/#projects",
       projectImageUrl: Image,
     },
