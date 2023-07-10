@@ -26,6 +26,7 @@ module.exports = {
       animation: {
         "customize-1": "customize-1 40s linear infinite",
         "customize-2": "customize-2 50s linear infinite",
+        "horizontal-move": "horizontal-move 15s linear infinite",
         "background-pan": "background-pan 3s linear infinite",
       },
       keyframes: {
@@ -50,6 +51,9 @@ module.exports = {
           "100%": {
             transform: "rotate(0.0deg) scaleX(1) scaleY(1)",
           },
+        },
+        "horizontal-move": {
+          to: { transform: "translateX(-120%)" },
         },
         "background-pan": {
           from: {

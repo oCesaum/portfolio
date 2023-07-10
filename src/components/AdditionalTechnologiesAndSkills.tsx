@@ -1,12 +1,23 @@
-export default function AdditionalTechnologiesAndSkills() {
+export function Technology(props: any) {
   return (
-    <ul className="pl-6 text-lg uppercase flex items-center justify-between">
-      <li className="relative before:absolute before:-left-4 before:top-3 before:block before:w-1 before:h-1 before:bg-zinc-300 before:rounded-full">PHP</li>
-      <li className="relative before:absolute before:-left-4 before:top-3 before:block before:w-1 before:h-1 before:bg-zinc-300 before:rounded-full">Git</li>
-      <li className="relative before:absolute before:-left-4 before:top-3 before:block before:w-1 before:h-1 before:bg-zinc-300 before:rounded-full">Vs Code</li>
-      <li className="relative before:absolute before:-left-4 before:top-3 before:block before:w-1 before:h-1 before:bg-zinc-300 before:rounded-full">Inglês</li>
-      <li className="relative before:absolute before:-left-4 before:top-3 before:block before:w-1 before:h-1 before:bg-zinc-300 before:rounded-full">Product Owner</li>
-      <li className="relative before:absolute before:-left-4 before:top-3 before:block before:w-1 before:h-1 before:bg-zinc-300 before:rounded-full">CRM</li>
+    <li className="relative before:absolute before:-left-4 before:top-3 before:block before:h-1 before:w-1 before:rounded-full before:bg-zinc-300">
+      {props.technology}
+    </li>
+  );
+}
+
+export default function AdditionalTechnologiesAndSkills() {
+  const technologies = [
+    { id: 1, name: "Git" },
+    { id: 2, name: "Vs Code" },
+    { id: 3, name: "Inglês" },
+    { id: 4, name: "Product Owner" },
+  ];
+  return (
+    <ul className="flex flex-wrap items-center gap-10 pl-6 text-lg uppercase">
+      {technologies.map((tec) => (
+        <Technology key={tec.id} technology={tec.name} />
+      ))}
     </ul>
   );
 }
