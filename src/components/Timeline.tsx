@@ -38,7 +38,7 @@ export default function Timeline() {
           (element) =>
             element && (
               <div
-                className="w-full rounded-md bg-zinc-100 p-6 text-zinc-900 shadow sm:w-64 md:w-96"
+                className="w-full rounded-md bg-zinc-200/95 p-6 text-zinc-900 shadow sm:w-64 md:w-96"
                 key={element.id}
               >
                 <p className="text-xl font-bold">{element.date}</p>
