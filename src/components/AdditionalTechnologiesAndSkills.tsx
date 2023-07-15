@@ -1,6 +1,6 @@
 export function Technology(props: any) {
   return (
-    <li className="relative before:absolute before:-left-4 before:top-3 before:block before:h-1 before:w-1 before:rounded-full before:bg-zinc-300">
+    <li className="relative before:absolute before:-left-4 before:top-3 before:block before:h-1 before:w-1 before:rounded-full before:bg-slate-300">
       {props.technology}
     </li>
   );

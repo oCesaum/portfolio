@@ -4,10 +4,13 @@ import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
 import Timeline from "@/components/Timeline";
+import Image from "next/image";
+
+import Mario from "../../public/mario.gif";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden text-zinc-950">
+    <main className="min-h-screen overflow-hidden text-slate-950">
       <Header />
       <section id="home" className="p-6 md:p-28 lg:p-32">
         <div className="max-w-xl space-y-1 md:max-w-lg lg:max-w-xl 2xl:max-w-2xl">
@@ -38,9 +41,10 @@ export default function Home() {
         </p>
         <Projects />
       </section>
+      <Image className="max-w-[1920px] w-screen" src={Mario} alt="Gif Mario" />
       <section
         id="technologies"
-        className="bg-zinc-950 px-6 pb-10 pt-20 text-zinc-100 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
+        className="bg-slate-950 px-6 pb-10 text-slate-100 pt-20 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
         <p className="mb-10 text-3xl font-semibold uppercase md:text-xl lg:text-3xl 2xl:text-4xl">
           Tecnologias
