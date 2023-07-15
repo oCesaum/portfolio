@@ -14,9 +14,8 @@ const Project = ({
   projectImageUrl,
 }: ProjectProps) => {
   return (
-    <div className="flex max-w-full flex-col space-y-4 rounded-lg bg-zinc-200 p-6 text-center shadow-2xl md:min-w-[250px] md:space-y-2 md:p-4 lg:w-[360px] xl:w-[416px] xl:space-y-3 2xl:w-[624px] 2xl:space-y-4 2xl:p-6">
+    <div className="flex max-w-full flex-col space-y-4 rounded-lg bg-zinc-200 pb-6 text-center shadow-2xl md:min-w-[250px] md:space-y-2 lg:w-[360px] xl:w-[416px] xl:space-y-3 2xl:w-[624px] 2xl:space-y-4 overflow-hidden">
       <Image
-        className="w-full rounded-md"
         src={projectImageUrl}
         alt={`Imagem do projeto ${projectName}`}
         priority
@@ -24,10 +23,10 @@ const Project = ({
         height={325}
         quality={100}
       />
-      <h3 className="ull mx-auto w-fit text-xl font-semibold uppercase md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">
+      <h3 className="mx-auto w-fit text-xl font-semibold uppercase md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">
         {projectName}
       </h3>
-      <p className="grow text-sm">{projectDescription}</p>
+      <p className="px-6 grow text-sm">{projectDescription}</p>
       <a
         href={projectLink}
         target="_blank"

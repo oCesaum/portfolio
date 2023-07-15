@@ -37,7 +37,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="mx-auto w-fit gap-0 md:grid md:grid-cols-2 md:gap-10 lg:gap-20">
+    <div className="mx-auto w-fit space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 sm:gap-10 lg:gap-20">
       {projects.map((project) => (
         <Project
           key={project.projectName}
