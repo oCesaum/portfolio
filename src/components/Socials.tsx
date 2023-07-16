@@ -21,7 +21,7 @@ export default function Socials( { componentType }: SocialsProps ) {
           </svg>
         </a>
       </li>
-      <li title="Linkedin">
+      <li title="LinkedIn">
         <a
           href="https://www.linkedin.com/in/cesar-augsuto/"
           target="_blank"

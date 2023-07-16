@@ -11,7 +11,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Portfólio - César Augusto",
   description:
-    'Meu portfólio em React, gerado via "create next app" e utilizando Tailwind e Typescrit',
+    'Meu portfólio em React, gerado via "create next app" e utilizando Tailwind e Typescript',
 };
 
 export default function RootLayout({
