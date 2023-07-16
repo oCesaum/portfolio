@@ -26,7 +26,7 @@ export default function Home() {
           <div className="text-sm 2xl:text-xl">
             <p>
               Olá! Sou um{" "}
-              <b>desenvolvedor front-end em tansição de carreira.</b> Atualmente
+              <b>desenvolvedor front-end em transição de carreira.</b> Atualmente
               trabalhando como técnico em segurança do trabalho.{" "}
             </p>
           </div>
