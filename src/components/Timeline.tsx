@@ -33,12 +33,12 @@ export default function Timeline() {
 
   return (
     <div>
-      <div className="relative grid place-content-center gap-y-10 after:absolute after:left-1/2 after:-z-50 after:h-[calc(100%+40px)] after:w-1 after:-translate-y-5 after:rounded-full after:bg-zinc-400">
+      <div className="relative grid place-content-center gap-y-10 after:absolute after:left-1/2 after:-z-50 after:h-[calc(100%+40px)] after:w-1 after:-translate-y-5 after:rounded-full after:bg-slate-400">
         {timeline.map(
           (element) =>
             element && (
               <div
-                className="w-full rounded-md bg-zinc-200/95 p-6 text-zinc-900 shadow sm:w-64 md:w-96"
+                className="w-full rounded-md bg-slate-200/95 p-6 text-zinc-900 shadow sm:w-64 md:w-96"
                 key={element.id}
               >
                 <p className="text-xl font-bold">{element.date}</p>
