@@ -13,11 +13,11 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden text-slate-950">
       <Header />
       <section id="home" className="p-6 md:p-28 lg:p-32">
-        <div className="max-w-lg space-y-2 md:max-w-md lg:max-w-lg 2xl:max-w-xl">
+        <div className="max-w-lg space-y-3 md:max-w-md lg:max-w-lg 2xl:max-w-xl">
           <h1 className="text-xl md:text-2xl font-semibold uppercase">
             César Augusto
           </h1>
-          <h2 className="text-2xl md:text-4xl font-bold uppercase">
+          <h2 className="text-2xl md:text-5xl font-bold uppercase">
             Desenvolvedor{" "}
             <span className="webkit-text-fill-color-transparent animate-background-pan bg-gradient-to-r from-blue-800 via-blue-700 via-90% to-blue-800 bg-200% bg-clip-text text-transparent">
               front-end
@@ -36,7 +36,7 @@ export default function Home() {
         id="projects"
         className="px-6 pb-10 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
-        <p className="mb-6 text-xl font-semibold uppercase md:text-xl lg:text-3xl 2xl:text-4xl">
+        <p className="mb-6 text-xl md:text-2xl font-semibold uppercase">
           Projetos
         </p>
         <Projects />
@@ -46,7 +46,7 @@ export default function Home() {
         id="technologies"
         className="bg-slate-950 px-6 pb-10 pt-20 text-slate-100 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
-        <p className="mb-6 text-xl font-semibold uppercase md:text-xl lg:text-3xl 2xl:text-4xl">
+        <p className="mb-6 text-xl md:text-2xl font-semibold uppercase">
           Tecnologias
         </p>
         <Technologies />
@@ -59,7 +59,7 @@ export default function Home() {
         id="about"
         className="px-6 pb-10 pt-20 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
-        <p className="mb-6 text-xl font-semibold uppercase md:text-xl lg:text-3xl 2xl:text-4xl">
+        <p className="mb-6 text-xl md:text-2xl font-semibold uppercase">
           Sobre mim
         </p>
         <Timeline />

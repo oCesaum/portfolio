@@ -5,6 +5,7 @@ interface ProjectProps {
   projectDescription: string;
   projectLink: string;
   projectImageUrl: StaticImageData;
+  projectRepositoryUrl?: string;
 }
 
 const Project = ({
@@ -12,6 +13,7 @@ const Project = ({
   projectDescription,
   projectLink,
   projectImageUrl,
+  projectRepositoryUrl,
 }: ProjectProps) => {
   return (
     <div className="flex w-full flex-col rounded-lg bg-zinc-200 text-center shadow-2xl overflow-hidden group relative">
@@ -28,15 +30,28 @@ const Project = ({
         <h3 className="font-bold uppercase">
           {projectName}
         </h3>
-        <p className="max-w-xs">{projectDescription}</p>
-        <a
-          href={projectLink}
-          target="_blank"
-          rel="noopener"
-          className="mx-auto inline-block w-fit rounded-md bg-zinc-950 px-6 py-2 text-center text-xs uppercase text-zinc-100 shadow-lg transition-transform hover:scale-110 md:px-4 lg:px-6 font-semibold"
-        >
-          Ver projeto
-        </a>
+        <p className="max-w-xs text-sm md:text-base">{projectDescription}</p>
+        <div className="flex gap-2 md:gap-4">
+          <a
+            href={projectLink}
+            target="_blank"
+            rel="noopener"
+            className="mx-auto inline-block w-fit rounded-md bg-zinc-950 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-zinc-100 shadow-lg transition-transform hover:scale-110"
+          >
+            Ver projeto
+          </a>
+
+          { projectRepositoryUrl &&
+            <a
+            href={projectRepositoryUrl}
+            target="_blank"
+            rel="noopener"
+            className="mx-auto inline-block w-fit rounded-md bg-purple-800 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-zinc-100 shadow-lg transition-transform hover:scale-110"
+            >
+            Ver repositório
+            </a>
+          }
+        </div>
       </div>
     </div>
   );

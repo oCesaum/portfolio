@@ -19,6 +19,7 @@ export default function Projects() {
         "O Tailwind Spotify é um clone do Spotify, utilizando Next.js e Tailwind para estilização.",
       projectLink: "https://tailwind-spotify-phi.vercel.app/",
       projectImageUrl: TailwindSpotify,
+      projectRepositoryUrl: 'https://github.com/oCesaum/tailwind-spotify',
     },
     {
       projectName: "Calculadora - Taxa de Gravidade",
@@ -26,6 +27,7 @@ export default function Projects() {
         "Uma calculadora simples feita para ajudar na produtividade dos técnicos em segurança do trabalho.",
       projectLink: "https://calculadora-hht.vercel.app/",
       projectImageUrl: CalculadoraTG,
+      projectRepositoryUrl: 'https://github.com/oCesaum/calculadora-taxa-gravidade',
     },
     {
       projectName: "Projeto 4 - Em construção",
@@ -45,6 +47,7 @@ export default function Projects() {
           projectDescription={project.projectDescription}
           projectLink={project.projectLink}
           projectImageUrl={project.projectImageUrl}
+          projectRepositoryUrl={project?.projectRepositoryUrl}
         />
       ))}
     </div>
