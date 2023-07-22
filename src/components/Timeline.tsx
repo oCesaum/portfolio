@@ -42,7 +42,7 @@ export default function Timeline() {
                 key={element.id}
               >
                 <p className="text-xl font-bold">{element.date}</p>
-                <p className="text-center text-lg">{element.description}</p>
+                <p className="text-lg">{element.description}</p>
               </div>
             )
         )}
