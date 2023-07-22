@@ -22,20 +22,20 @@ export default function Projects() {
       projectRepositoryUrl: 'https://github.com/oCesaum/tailwind-spotify',
     },
     {
-      projectName: "Calculadora - Taxa de Gravidade",
-      projectDescription:
-        "Uma calculadora simples feita para ajudar na produtividade dos técnicos em segurança do trabalho.",
-      projectLink: "https://calculadora-hht.vercel.app/",
-      projectImageUrl: CalculadoraTG,
-      projectRepositoryUrl: 'https://github.com/oCesaum/calculadora-taxa-gravidade',
-    },
-    {
       projectName: "Barber Landing Page",
       projectDescription:
         "Um projeto simples para barbearias",
       projectLink: "https://barber-landing-page-theta.vercel.app/",
       projectImageUrl: Barber,
       projectRepositoryUrl: 'https://github.com/oCesaum/barber-landing-page',
+    },
+    {
+      projectName: "Calculadora - Taxa de Gravidade",
+      projectDescription:
+        "Uma calculadora simples feita para ajudar na produtividade dos técnicos em segurança do trabalho.",
+      projectLink: "https://calculadora-hht.vercel.app/",
+      projectImageUrl: CalculadoraTG,
+      projectRepositoryUrl: 'https://github.com/oCesaum/calculadora-taxa-gravidade',
     },
   ];
 
