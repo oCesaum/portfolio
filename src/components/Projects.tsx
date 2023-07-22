@@ -9,7 +9,7 @@ export default function Projects() {
     {
       projectName: "Fast Cart - Landing Page",
       projectDescription:
-        "Um projeto feito para facilitar a criação de um carrinho de compras em sites de venda, apenas adicionando o script o carrinho é criado automaticamente.",
+        "Um projeto feito para automatizar a criação de um carrinho de compras em sites de venda.",
       projectLink: "https://fast-cart-landing-page.vercel.app/",
       projectImageUrl: FastCart,
     },
@@ -21,7 +21,7 @@ export default function Projects() {
       projectImageUrl: TailwindSpotify,
     },
     {
-      projectName: "Calculadora Taxa de Gravidade",
+      projectName: "Calculadora - Taxa de Gravidade",
       projectDescription:
         "Uma calculadora simples feita para ajudar na produtividade dos técnicos em segurança do trabalho.",
       projectLink: "https://calculadora-hht.vercel.app/",

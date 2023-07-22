@@ -28,7 +28,7 @@ const Project = ({
         <h3 className="text-2xl font-bold uppercase">
           {projectName}
         </h3>
-        <p className="text-lg max-w-xs font-semibold">{projectDescription}</p>
+        <p className="text-lg max-w-xs">{projectDescription}</p>
         <a
           href={projectLink}
           target="_blank"
