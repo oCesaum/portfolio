@@ -55,7 +55,7 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`fixed right-0 top-0 z-10 h-screen w-fit shadow-lg cursor-default bg-slate-100 px-10 py-5 transition-all duration-300 ease-in lg:hidden ${
+        className={`fixed right-0 top-0 z-50 h-screen w-fit shadow-lg cursor-default bg-slate-100 px-10 py-5 transition-all duration-300 ease-in lg:hidden ${
           mobileMenuIsOpen ? "" : "translate-x-[110%]"
         }`}
       >
