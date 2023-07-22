@@ -23,7 +23,7 @@ export default function Socials( { componentType }: SocialsProps ) {
       </li>
       <li title="LinkedIn">
         <a
-          href="https://www.linkedin.com/in/cesar-augsuto/"
+          href="https://www.linkedin.com/in/cesar-augusto-pinho/"
           target="_blank"
           rel="noopener"
           className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-zinc-900 before:absolute before:-bottom-2"
