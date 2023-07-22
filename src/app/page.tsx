@@ -41,10 +41,12 @@ export default function Home() {
         </p>
         <Projects />
       </section>
-      <Image className="w-screen max-w-[1920px]" src={Mario} alt="Gif Mario" />
+      <div className="rounded-t-[3.5rem] overflow-hidden">
+        <Image className="w-screen max-w-[1920px]" src={Mario} alt="Gif Mario" />
+      </div>
       <section
         id="technologies"
-        className="bg-slate-950 px-6 pb-10 pt-20 text-slate-100 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
+        className="bg-slate-950 px-6 pb-10 pt-20 text-slate-100 md:px-28 md:pb-24 lg:px-32 lg:pb-32 rounded-b-[3.5rem]"
       >
         <p className="mb-6 text-xl md:text-2xl font-semibold uppercase">
           Tecnologias
