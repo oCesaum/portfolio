@@ -13,17 +13,17 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden text-slate-950">
       <Header />
       <section id="home" className="p-6 md:p-28 lg:p-32">
-        <div className="max-w-xl space-y-1 md:max-w-lg lg:max-w-xl 2xl:max-w-2xl">
-          <h1 className="text-2xl font-semibold uppercase sm:text-4xl 2xl:text-5xl">
+        <div className="max-w-lg space-y-2 md:max-w-md lg:max-w-lg 2xl:max-w-xl">
+          <h1 className="text-xl md:text-2xl font-semibold uppercase">
             César Augusto
           </h1>
-          <h2 className="text-3xl font-bold uppercase sm:text-5xl lg:text-6xl 2xl:text-7xl">
+          <h2 className="text-2xl md:text-4xl font-bold uppercase">
             Desenvolvedor{" "}
             <span className="webkit-text-fill-color-transparent animate-background-pan bg-gradient-to-r from-blue-800 via-blue-700 via-90% to-blue-800 bg-200% bg-clip-text text-transparent">
               front-end
             </span>
           </h2>
-          <div className="text-sm 2xl:text-xl">
+          <div className="text-sm md:text-base">
             <p>
               Olá! Sou um{" "}
               <b>desenvolvedor front-end em transição de carreira.</b> Atualmente
