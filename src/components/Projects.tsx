@@ -1,6 +1,6 @@
+import Barber from "../../public/barber.png";
 import CalculadoraTG from "../../public/calculadora-taxa-gravidade.png";
 import FastCart from "../../public/fast-cart.png";
-import Image from "../../public/project-image.jpg";
 import TailwindSpotify from "../../public/tailwind-spotify.png";
 import Project from "./Project";
 
@@ -30,11 +30,12 @@ export default function Projects() {
       projectRepositoryUrl: 'https://github.com/oCesaum/calculadora-taxa-gravidade',
     },
     {
-      projectName: "Projeto 4 - Em construção",
+      projectName: "Barber Landing Page",
       projectDescription:
-        "Projeto em construção, imagem meramente ilustrativa",
-      projectLink: "/#projects",
-      projectImageUrl: Image,
+        "Um projeto simples para barbearias",
+      projectLink: "https://barber-landing-page-theta.vercel.app/",
+      projectImageUrl: Barber,
+      projectRepositoryUrl: 'https://github.com/oCesaum/barber-landing-page',
     },
   ];
 
