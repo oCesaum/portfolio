@@ -14,8 +14,9 @@ const Project = ({
   projectImageUrl,
 }: ProjectProps) => {
   return (
-    <div className="flex max-w-full flex-col space-y-4 rounded-lg bg-zinc-200 pb-6 text-center shadow-2xl md:min-w-[250px] md:space-y-2 lg:w-[360px] xl:w-[416px] xl:space-y-3 2xl:w-[624px] 2xl:space-y-4 overflow-hidden">
+    <div className="flex max-w-full flex-col rounded-lg bg-zinc-200 text-center shadow-2xl md:min-w-[250px] lg:w-[360px] xl:w-[416px] 2xl:w-[624px] overflow-hidden group relative">
       <Image
+        className="group-hover:scale-125 transition-all duration-500 w-full h-full"
         src={projectImageUrl}
         alt={`Imagem do projeto ${projectName}`}
         priority
@@ -23,18 +24,20 @@ const Project = ({
         height={325}
         quality={100}
       />
-      <h3 className="mx-auto w-fit text-xl font-semibold uppercase md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">
-        {projectName}
-      </h3>
-      <p className="px-6 grow text-sm">{projectDescription}</p>
-      <a
-        href={projectLink}
-        target="_blank"
-        rel="noopener"
-        className="mx-auto inline-block w-fit rounded-md bg-zinc-950 px-6 py-2 text-center text-base uppercase text-zinc-100 shadow-lg transition-transform hover:scale-110 md:px-4 md:text-sm lg:px-6 2xl:text-base"
-      >
-        Ver projeto
-      </a>
+      <div className="absolute h-full w-full translate-y-full z-10 bg-zinc-800/95 text-zinc-300 transition-all duration-500 space-y-4 group-hover:translate-y-0 flex flex-col items-center justify-center">
+        <h3 className="text-2xl font-bold uppercase">
+          {projectName}
+        </h3>
+        <p className="text-lg max-w-xs font-semibold">{projectDescription}</p>
+        <a
+          href={projectLink}
+          target="_blank"
+          rel="noopener"
+          className="mx-auto inline-block w-fit rounded-md bg-zinc-950 px-6 py-2 text-center text-base uppercase text-zinc-100 shadow-lg transition-transform hover:scale-110 md:px-4 md:text-sm lg:px-6 2xl:text-base font-semibold"
+        >
+          Ver projeto
+        </a>
+      </div>
     </div>
   );
 };

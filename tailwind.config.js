@@ -18,11 +18,6 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors: {
-        primary: "#ff5a5f",
-        secondary: "#00b6ba",
-        tertiary: "#ff7f50",
-      },
       animation: {
         "customize-1": "customize-1 40s linear infinite",
         "customize-2": "customize-2 50s linear infinite",

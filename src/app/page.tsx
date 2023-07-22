@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
           <h2 className="text-3xl font-bold uppercase sm:text-5xl lg:text-6xl 2xl:text-7xl">
             Desenvolvedor{" "}
-            <span className="webkit-text-fill-color-transparent animate-background-pan bg-gradient-to-r from-primary via-tertiary via-90% to-primary bg-200% bg-clip-text text-transparent">
+            <span className="webkit-text-fill-color-transparent animate-background-pan bg-gradient-to-r from-blue-800 via-blue-700 via-90% to-blue-800 bg-200% bg-clip-text text-transparent">
               front-end
             </span>
           </h2>

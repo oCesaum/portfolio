@@ -16,14 +16,14 @@ export default function Projects() {
     {
       projectName: "Tailwind Spotify",
       projectDescription:
-        "O Tailwind Spotify é um projeto para aprimoramento das minhas habilidades em Tailwind, fazendo assim um clone do Spotify. O projeto ainda não está concluído, mas clique no link para ver como está ficando.",
+        "O Tailwind Spotify é um clone do Spotify, utilizando Next.js e Tailwind para estilização.",
       projectLink: "https://tailwind-spotify-phi.vercel.app/",
       projectImageUrl: TailwindSpotify,
     },
     {
       projectName: "Calculadora Taxa de Gravidade",
       projectDescription:
-        "Uma calculadora simples feita para ajudar na produtividade dos técnicos em segurança do trabalho. Apesar de simples o projeto foi utilizado por uma turma de alunos cursando o técnico de segurança.",
+        "Uma calculadora simples feita para ajudar na produtividade dos técnicos em segurança do trabalho.",
       projectLink: "https://calculadora-hht.vercel.app/",
       projectImageUrl: CalculadoraTG,
     },
