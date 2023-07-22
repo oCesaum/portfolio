@@ -47,7 +47,7 @@ export default function Timeline() {
             )
         )}
         <svg
-          className="absolute left-1/2 top-[calc(100%-5px)] h-12 w-12 -translate-x-5 fill-zinc-400"
+          className="top-[calc(100%-5px)] h-12 w-12 absolute left-1/2 -translate-x-[1.35rem] fill-slate-400"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512"
         >
