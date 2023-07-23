@@ -16,7 +16,7 @@ const Project = ({
   projectRepositoryUrl,
 }: ProjectProps) => {
   return (
-    <div className="flex w-full flex-col rounded-lg bg-zinc-200 text-center shadow-2xl overflow-hidden group relative">
+    <div className="flex w-full flex-col rounded-lg bg-slate-200 text-center shadow-2xl overflow-hidden group relative">
       <Image
         className="group-hover:scale-125 transition-all duration-500 w-full h-full"
         src={projectImageUrl}
@@ -26,7 +26,7 @@ const Project = ({
         height={325}
         quality={100}
       />
-      <div className="absolute h-full w-full translate-y-full z-10 bg-zinc-800/95 text-zinc-300 transition-all duration-500 space-y-4 group-hover:translate-y-0 flex flex-col items-center justify-center">
+      <div className="absolute h-full w-full translate-y-full z-10 bg-slate-800/95 text-slate-300 transition-all duration-500 space-y-4 group-hover:translate-y-0 flex flex-col items-center justify-center">
         <h3 className="font-bold uppercase">
           {projectName}
         </h3>
@@ -36,7 +36,7 @@ const Project = ({
             href={projectLink}
             target="_blank"
             rel="noopener"
-            className="mx-auto inline-block w-fit rounded-md bg-zinc-950 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-zinc-100 shadow-lg transition-transform hover:scale-110"
+            className="mx-auto inline-block w-fit rounded-md bg-zinc-950 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-slate-100 shadow-lg transition-transform hover:scale-110"
           >
             Ver projeto
           </a>
@@ -46,7 +46,7 @@ const Project = ({
             href={projectRepositoryUrl}
             target="_blank"
             rel="noopener"
-            className="mx-auto inline-block w-fit rounded-md bg-purple-800 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-zinc-100 shadow-lg transition-transform hover:scale-110"
+            className="mx-auto inline-block w-fit rounded-md bg-purple-800 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-slate-100 shadow-lg transition-transform hover:scale-110"
             >
             Ver repositório
             </a>
