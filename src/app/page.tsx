@@ -48,7 +48,12 @@ export default function Home() {
         <Image
           className="w-screen max-w-[1920px]"
           src={Mario}
-          alt="Gif Mario"
+          alt="Mario gif"
+          aria-label="Mario gif"
+          width={1920}
+          height={1080}
+          quality={100}
+          placeholder="blur"
         />
       </div>
       <section

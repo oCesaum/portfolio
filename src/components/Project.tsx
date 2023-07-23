@@ -22,14 +22,14 @@ const Project = ({
         src={projectImageUrl}
         alt={`Imagem do projeto ${projectName}`}
         priority
-        width={1080}
-        height={325}
+        width={1920}
+        height={1080}
         quality={100}
+        placeholder="blur"
+        aria-label={projectName}
       />
       <div className="absolute h-full w-full translate-y-full z-10 bg-slate-800/95 text-slate-300 transition-all duration-500 space-y-4 group-hover:translate-y-0 flex flex-col items-center justify-center">
-        <h3 className="font-bold uppercase">
-          {projectName}
-        </h3>
+        <h3 className="font-bold uppercase">{projectName}</h3>
         <p className="max-w-xs text-sm md:text-base">{projectDescription}</p>
         <div className="flex gap-2 md:gap-4">
           <a
@@ -41,16 +41,16 @@ const Project = ({
             Ver projeto
           </a>
 
-          { projectRepositoryUrl &&
+          {projectRepositoryUrl && (
             <a
-            href={projectRepositoryUrl}
-            target="_blank"
-            rel="noopener"
-            className="mx-auto inline-block w-fit rounded-md bg-purple-800 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-slate-100 shadow-lg transition-transform hover:scale-110"
+              href={projectRepositoryUrl}
+              target="_blank"
+              rel="noopener"
+              className="mx-auto inline-block w-fit rounded-md bg-purple-800 px-2 md:px-4 py-1.5 md:py-2 text-center text-xs uppercase text-slate-100 shadow-lg transition-transform hover:scale-110"
             >
-            Ver repositório
+              Ver repositório
             </a>
-          }
+          )}
         </div>
       </div>
     </div>

@@ -44,7 +44,12 @@ const Navbar = () => {
       </nav>
 
       <div className="block lg:hidden">
-        <button onClick={() => setMobileMenuIsOpen(true)}>
+
+        {/* melhorar botão de abrir e fechar menu mobile, fazer ser apenas 1 botão */}
+        <button
+          aria-label="Ativar menu mobile"
+          onClick={() => setMobileMenuIsOpen(true)}
+        >
           <svg
             className="h-6 w-6 fill-slate-950"
             xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +67,7 @@ const Navbar = () => {
         <button
           className="my-2 ml-auto flex -translate-y-2/4"
           onClick={() => setMobileMenuIsOpen(false)}
+          aria-label="Desativar menu mobile"
         >
           <svg
             className="h-12 w-12 fill-slate-950 p-3 transition-transform duration-300 hover:rotate-180"

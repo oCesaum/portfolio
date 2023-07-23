@@ -15,6 +15,7 @@ export default function Socials({ componentType }: SocialsProps) {
           target="_blank"
           rel="noopener"
           className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-slate-900 before:absolute before:-bottom-2"
+          aria-label="Link para meu Github"
         >
           <svg
             className="w-6 h-6 fill-slate-900"
@@ -31,6 +32,7 @@ export default function Socials({ componentType }: SocialsProps) {
           target="_blank"
           rel="noopener"
           className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-slate-900 before:absolute before:-bottom-2"
+          aria-label="Link para meu LinkedIn"
         >
           <svg
             className="w-6 h-6 fill-slate-900"
@@ -47,6 +49,7 @@ export default function Socials({ componentType }: SocialsProps) {
           target="_blank"
           rel="noopener"
           className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-slate-900 before:absolute before:-bottom-2"
+          aria-label="Link para meu Instagram"
         >
           <svg
             className="w-6 h-6 fill-slate-900"
