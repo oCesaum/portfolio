@@ -12,41 +12,48 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden text-slate-950">
       <Header />
-      <section id="home" className="p-6 md:p-28 lg:p-32">
+      <section
+        id="home"
+        className="px-6 pb-10 pt-20 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
+      >
         <div className="max-w-lg space-y-3 md:max-w-md lg:max-w-lg 2xl:max-w-xl">
           <h1 className="text-xl md:text-2xl font-semibold uppercase">
             César Augusto
           </h1>
           <h2 className="text-2xl md:text-5xl font-bold uppercase">
             Desenvolvedor{" "}
-            <span className="webkit-text-fill-color-transparent animate-background-pan bg-gradient-to-r from-blue-800 via-blue-700 via-90% to-blue-800 bg-200% bg-clip-text text-transparent">
+            <span className="webkit-text-fill-color-transparent animate-background-pan bg-gradient-to-r from-blue-800 via-blue-600 via-90% to-blue-800 bg-200% bg-clip-text text-transparent">
               front-end
             </span>
           </h2>
           <div className="text-sm md:text-base">
             <p>
               Olá! Sou um{" "}
-              <b>desenvolvedor front-end em transição de carreira.</b> Atualmente
-              trabalhando como técnico em segurança do trabalho.{" "}
+              <b>desenvolvedor front-end em transição de carreira.</b>{" "}
+              Atualmente trabalhando como técnico em segurança do trabalho.{" "}
             </p>
           </div>
         </div>
       </section>
       <section
         id="projects"
-        className="px-6 pb-10 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
+        className="px-6 pb-10 pt-20 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
         <p className="mb-6 text-xl md:text-2xl font-semibold uppercase">
           Projetos
         </p>
         <Projects />
       </section>
-      <div className="rounded-t-[3.5rem] overflow-hidden">
-        <Image className="w-screen max-w-[1920px]" src={Mario} alt="Gif Mario" />
+      <div className="rounded-t-3xl overflow-hidden">
+        <Image
+          className="w-screen max-w-[1920px]"
+          src={Mario}
+          alt="Gif Mario"
+        />
       </div>
       <section
         id="technologies"
-        className="bg-slate-950 px-6 pb-10 pt-20 text-slate-100 md:px-28 md:pb-24 lg:px-32 lg:pb-32 rounded-b-[3.5rem]"
+        className="bg-slate-950 px-6 pb-10 pt-20 text-slate-100 md:px-28 md:pb-24 lg:px-32 lg:pb-32 rounded-b-3xl"
       >
         <p className="mb-6 text-xl md:text-2xl font-semibold uppercase">
           Tecnologias

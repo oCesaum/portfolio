@@ -14,7 +14,7 @@ const Navbar = () => {
             <Link
               to="projects"
               smooth="true"
-              duration="400"
+              duration={500}
               className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-zinc-950 before:transition-all before:duration-200 before:hover:w-full"
             >
               Projetos
