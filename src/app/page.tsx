@@ -50,9 +50,6 @@ export default function Home() {
           src={Mario}
           alt="Mario gif"
           aria-label="Mario gif"
-          width={1920}
-          height={1080}
-          quality={100}
         />
       </div>
       <section

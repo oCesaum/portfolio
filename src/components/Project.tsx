@@ -21,10 +21,6 @@ const Project = ({
         className="group-hover:scale-125 transition-all duration-500 w-full h-full"
         src={projectImageUrl}
         alt={`Imagem do projeto ${projectName}`}
-        priority
-        width={1920}
-        height={1080}
-        quality={100}
         placeholder="blur"
         aria-label={projectName}
       />

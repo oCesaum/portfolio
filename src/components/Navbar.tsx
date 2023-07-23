@@ -44,7 +44,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <button
-        aria-label="Ativar menu mobile"
+        aria-label="Ativar e desativar menu mobile"
         onClick={() => setHandleActivateMobileMenu(!handleActivateMobileMenu)}
         className={`${
           handleActivateMobileMenu
