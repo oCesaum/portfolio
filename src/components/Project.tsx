@@ -23,6 +23,7 @@ const Project = ({
         alt={`Imagem do projeto ${projectName}`}
         placeholder="blur"
         aria-label={projectName}
+        loading="eager"
       />
       <div className="absolute h-full w-full translate-y-full z-10 bg-slate-800/95 text-slate-300 transition-all duration-500 space-y-4 group-hover:translate-y-0 flex flex-col items-center justify-center">
         <h3 className="font-bold uppercase">{projectName}</h3>
