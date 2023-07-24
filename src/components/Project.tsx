@@ -18,14 +18,14 @@ const Project = ({
   return (
     <div className="flex w-full flex-col rounded-lg bg-slate-200 text-center shadow-2xl overflow-hidden group relative">
       <Image
-        className="group-hover:scale-125 transition-all duration-500 w-full h-full"
+        className="group-hover:scale-125 group-hover:blur-sm transition-all duration-500 w-full h-full"
         src={projectImageUrl}
         alt={`Imagem do projeto ${projectName}`}
         placeholder="blur"
         aria-label={projectName}
         loading="eager"
       />
-      <div className="absolute h-full w-full translate-y-full z-10 bg-slate-800/95 text-slate-300 transition-all duration-500 space-y-4 group-hover:translate-y-0 flex flex-col items-center justify-center">
+      <div className="absolute h-full w-full translate-y-[110%] z-10 bg-slate-800/75 text-slate-300 transition-all duration-500 space-y-4 group-hover:translate-y-0 flex flex-col items-center justify-center">
         <h3 className="font-bold uppercase">{projectName}</h3>
         <p className="max-w-xs text-sm md:text-base">{projectDescription}</p>
         <div className="flex gap-2 md:gap-4">

@@ -16,7 +16,7 @@ export default function Home() {
         id="home"
         className="px-6 pb-10 pt-20 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
-        <div className="max-w-lg space-y-3 md:max-w-md lg:max-w-lg 2xl:max-w-xl">
+        <div className="max-w-lg space-y-1 md:space-y-3 md:max-w-md lg:max-w-lg 2xl:max-w-xl">
           <h1 className="text-xl md:text-2xl font-semibold uppercase">
             César Augusto
           </h1>
