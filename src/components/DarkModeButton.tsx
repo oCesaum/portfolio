@@ -4,7 +4,7 @@ import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function DarkModeButton() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(localStorage.theme ?? "light");
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
