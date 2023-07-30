@@ -16,7 +16,7 @@ export default function DarkModeButton() {
   };
 
   return (
-    <button onClick={() => handleThemeToggle()}>
+    <button onClick={() => handleThemeToggle()} className="group">
       {theme === "light" ? (
         <Sun className=" text-slate-900 animate-rotate group-hover:text-yellow-500 duration-500 transition-colors " />
       ) : (

@@ -15,4 +15,20 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: #020617 #e2e8f0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #e2e8f0;
+  border: 2px solid #1e293b;
+}
+
+html.dark * {
+  scrollbar-color: #e2e8f0 #1e293b;
 }
