@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function DarkModeButton() {
   const prefersDarkMode = window.matchMedia(
     "(prefers-color-scheme: dark)"
-  ).matches;
+  ).matches ?? false;
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
     return storedTheme || (prefersDarkMode ? "dark" : "light");
