@@ -10,7 +10,7 @@ import Mario from "../../public/mario.gif";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden text-slate-950">
+    <main className="min-h-screen overflow-hidden text-slate-950 dark:text-slate-200">
       <Header />
       <section
         id="home"

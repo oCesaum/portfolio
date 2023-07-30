@@ -5,6 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     backgroundSize: {
       auto: "auto",
@@ -19,33 +20,13 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        "customize-1": "customize-1 40s linear infinite",
-        "customize-2": "customize-2 50s linear infinite",
+        rotate: "rotate .5s linear",
         "horizontal-move": "horizontal-move 15s linear infinite",
         "background-pan": "background-pan 3s linear infinite",
       },
       keyframes: {
-        "customize-1": {
-          "0%": {
-            transform: "rotate(0.0deg) scaleX(1) scaleY(1)",
-          },
-          "50%": {
-            transform: "rotate(360deg) scaleX(1.5) scaleY(2)",
-          },
-          "100%": {
-            transform: "rotate(0.0deg) scaleX(1) scaleY(1)",
-          },
-        },
-        "customize-2": {
-          "0%": {
-            transform: "rotate(0.0deg) scaleX(1) scaleY(1)",
-          },
-          "50%": {
-            transform: "rotate(-360deg) scaleX(1.5) scaleY(2)",
-          },
-          "100%": {
-            transform: "rotate(0.0deg) scaleX(1) scaleY(1)",
-          },
+        rotate: {
+          to: { transform: "rotate(360deg)" },
         },
         "horizontal-move": {
           to: { transform: "translateX(-120%)" },
