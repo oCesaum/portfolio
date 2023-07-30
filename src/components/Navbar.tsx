@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import { Link } from "react-scroll";
+import DarkModeButton from "./DarkModeButton";
 
 const Navbar = () => {
   const [handleActivateMobileMenu, setHandleActivateMobileMenu] =
     useState(false);
 
   return (
-    <>
+    <div className="flex items-center justify-center gap-5">
       <nav>
         <ul className="hidden items-center gap-16 lg:flex">
           <li>
@@ -16,7 +17,7 @@ const Navbar = () => {
               to="projects"
               smooth="true"
               duration={500}
-              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full"
+              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
             >
               Projetos
             </Link>
@@ -26,7 +27,7 @@ const Navbar = () => {
               to="technologies"
               smooth="true"
               duration="400"
-              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full"
+              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
             >
               Tecnologias
             </Link>
@@ -36,7 +37,7 @@ const Navbar = () => {
               to="about"
               smooth="true"
               duration="400"
-              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full"
+              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
             >
               Sobre mim
             </Link>
@@ -64,7 +65,7 @@ const Navbar = () => {
                 to="projects"
                 smooth="true"
                 duration="400"
-                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full"
+                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
               >
                 Projetos
               </Link>
@@ -74,7 +75,7 @@ const Navbar = () => {
                 to="technologies"
                 smooth="true"
                 duration="400"
-                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full"
+                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
               >
                 Tecnologias
               </Link>
@@ -84,7 +85,7 @@ const Navbar = () => {
                 to="about"
                 smooth="true"
                 duration="400"
-                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full"
+                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
               >
                 Sobre mim
               </Link>
@@ -92,7 +93,8 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-    </>
+      <DarkModeButton />
+    </div>
   );
 };
 

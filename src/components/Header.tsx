@@ -1,4 +1,3 @@
-import DarkModeButton from "./DarkModeButton";
 import Navbar from "./Navbar";
 import ScrollToTopButton from "./ScrollToTopButton";
 
@@ -12,7 +11,6 @@ export default function Header() {
         Portfólio
       </a>
       <Navbar />
-      <DarkModeButton />
       <ScrollToTopButton />
     </header>
   );
