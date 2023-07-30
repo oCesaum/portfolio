@@ -18,9 +18,9 @@ export default function DarkModeButton() {
   return (
     <button onClick={() => handleThemeToggle()} className="group">
       {theme === "light" ? (
-        <Sun className=" text-slate-900 animate-rotate group-hover:text-yellow-500 duration-500 transition-colors " />
+        <Sun className=" text-slate-900 animate-rotate group-hover:text-yellow-500 duration-200 transition-colors " />
       ) : (
-        <Moon className="text-slate-200 animate-rotate group-hover:text-blue-500 duration-500 transition-colors" />
+        <Moon className="text-slate-200 animate-rotate group-hover:text-blue-500 duration-200 transition-colors" />
       )}
     </button>
   );
