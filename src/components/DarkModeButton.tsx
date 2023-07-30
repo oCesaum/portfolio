@@ -24,11 +24,11 @@ export default function DarkModeButton() {
   };
 
   return (
-    <button onClick={handleThemeToggle}>
+    <button onClick={handleThemeToggle} className="group hover:rotate-[360deg] duration-500 transition-transform">
       {theme === "light" ? (
-        <Sun className="text-slate-900 animate-rotate" />
+        <Sun className=" text-slate-900 animate-rotate group-hover:text-yellow-500 duration-500 transition-colors " />
       ) : (
-        <Moon className="text-slate-200 animate-rotate" />
+        <Moon className="text-slate-200 animate-rotate group-hover:text-blue-500 duration-500 transition-colors" />
       )}
     </button>
   );
