@@ -5,17 +5,15 @@ import { useEffect, useState } from "react";
 
 export default function DarkModeButton() {
   const [theme, setTheme] = useState(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       return localStorage.theme || "light";
     }
-    return "light";
+    return "dark";
   });
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", theme === "dark");
-    if (typeof window !== 'undefined') {
-      localStorage.theme = theme;
-    }
+    localStorage.theme = theme;
   }, [theme]);
 
   const handleThemeToggle = () => {
