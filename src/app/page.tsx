@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import Image from "next/image";
 import Mario from "../../public/mario.gif";
 
@@ -74,6 +75,7 @@ export default function Home() {
         <About />
       </section>
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }
