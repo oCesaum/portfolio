@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 import Barber from "../../public/barber.png";
 import CalculadoraTG from "../../public/calculadora-taxa-gravidade.png";
 import DoceCompota from "../../public/doce compota.png";
+import DOMComparator from "../../public/dom-comparator.png";
 import FastCart from "../../public/fast-cart.png";
 import ProjectImage from "../../public/project-image.jpg";
 import TailwindSpotify from "../../public/tailwind-spotify.png";
@@ -22,7 +23,7 @@ export default function Projects() {
       projectDescription:
         "Ferramenta web completa para comparação de sitemaps XML e código HTML com normalização inteligente, robô automatizado e interface moderna com suporte a tema claro/escuro.",
       projectLink: "https://dom-comparator.vercel.app/",
-      projectImageUrl: ProjectImage,
+      projectImageUrl: DOMComparator,
       projectRepositoryUrl: "https://github.com/oCesaum/DOM-Comparator",
     },
     {
