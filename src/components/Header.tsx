@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import ScrollToTopButton from "./ScrollToTopButton";
 
 export default function Header() {
   return (
@@ -10,7 +9,6 @@ export default function Header() {
         Portfólio
       </div>
       <Navbar />
-      <ScrollToTopButton />
     </header>
   );
 }
