@@ -1,13 +1,22 @@
-export function Technology(props: any) {
+interface TechnologyProps {
+  technology: string;
+}
+
+export function Technology({ technology }: TechnologyProps) {
   return (
     <li className="relative before:absolute before:-left-4 before:top-3 before:block before:h-1 before:w-1 before:rounded-full before:bg-slate-300">
-      {props.technology}
+      {technology}
     </li>
   );
 }
 
+interface TechnologyItem {
+  id: number;
+  name: string;
+}
+
 export default function AdditionalTechnologiesAndSkills() {
-  const technologies = [
+  const technologies: TechnologyItem[] = [
     { id: 1, name: "Git" },
     { id: 2, name: "Vs Code" },
     { id: 3, name: "Inglês" },

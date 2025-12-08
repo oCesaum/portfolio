@@ -68,6 +68,7 @@ const Navbar = () => {
                 to="projects"
                 smooth="true"
                 duration="400"
+                onClick={() => setHandleActivateMobileMenu(false)}
                 className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
               >
                 Projetos
@@ -78,6 +79,7 @@ const Navbar = () => {
                 to="technologies"
                 smooth="true"
                 duration="400"
+                onClick={() => setHandleActivateMobileMenu(false)}
                 className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
               >
                 Tecnologias
@@ -88,6 +90,7 @@ const Navbar = () => {
                 to="about"
                 smooth="true"
                 duration="400"
+                onClick={() => setHandleActivateMobileMenu(false)}
                 className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
               >
                 Sobre mim

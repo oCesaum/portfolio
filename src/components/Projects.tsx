@@ -1,11 +1,20 @@
+import { StaticImageData } from "next/image";
 import Barber from "../../public/barber.png";
 import CalculadoraTG from "../../public/calculadora-taxa-gravidade.png";
 import FastCart from "../../public/fast-cart.png";
 import TailwindSpotify from "../../public/tailwind-spotify.png";
 import Project from "./Project";
 
+interface ProjectData {
+  projectName: string;
+  projectDescription: string;
+  projectLink: string;
+  projectImageUrl: StaticImageData;
+  projectRepositoryUrl?: string;
+}
+
 export default function Projects() {
-  const projects = [
+  const projects: ProjectData[] = [
     {
       projectName: "Fast Cart - Landing Page",
       projectDescription:

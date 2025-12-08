@@ -5,7 +5,6 @@ import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
 import Timeline from "@/components/Timeline";
 import Image from "next/image";
-
 import Mario from "../../public/mario.gif";
 
 export default function Home() {

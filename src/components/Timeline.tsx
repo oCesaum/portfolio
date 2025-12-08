@@ -1,5 +1,11 @@
+interface TimelineItem {
+  id: number;
+  date: string;
+  description: string;
+}
+
 export default function Timeline() {
-  const timeline = [
+  const timeline: TimelineItem[] = [
     {
       id: 1,
       date: "2002",
@@ -34,18 +40,15 @@ export default function Timeline() {
   return (
     <div>
       <div className="relative grid place-content-center gap-y-10 after:absolute after:left-1/2 after:-z-50 after:h-[calc(100%+40px)] after:w-1 after:-translate-y-5 after:rounded-full after:bg-slate-400 dark:after:bg-slate-900">
-        {timeline.map(
-          (element) =>
-            element && (
-              <div
-                className="w-full rounded-md bg-slate-200/95 dark:bg-slate-900/95 p-6 text-slate-900 dark:text-slate-200 shadow sm:w-64 md:w-96"
-                key={element.id}
-              >
-                <p className="text-xl font-bold">{element.date}</p>
-                <p className="text-lg">{element.description}</p>
-              </div>
-            )
-        )}
+        {timeline.map((element) => (
+          <div
+            className="w-full rounded-md bg-slate-200/95 dark:bg-slate-900/95 p-6 text-slate-900 dark:text-slate-200 shadow sm:w-64 md:w-96"
+            key={element.id}
+          >
+            <p className="text-xl font-bold">{element.date}</p>
+            <p className="text-lg">{element.description}</p>
+          </div>
+        ))}
         <svg
           className="top-[calc(100%-5px)] h-12 w-12 absolute left-1/2 -translate-x-[1.35rem] fill-slate-400 dark:fill-slate-900"
           xmlns="http://www.w3.org/2000/svg"
