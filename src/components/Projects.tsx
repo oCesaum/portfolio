@@ -1,9 +1,10 @@
 import { StaticImageData } from "next/image";
 import Barber from "../../public/barber.png";
 import CalculadoraTG from "../../public/calculadora-taxa-gravidade.png";
+import DoceCompota from "../../public/doce compota.png";
 import FastCart from "../../public/fast-cart.png";
-import TailwindSpotify from "../../public/tailwind-spotify.png";
 import ProjectImage from "../../public/project-image.jpg";
+import TailwindSpotify from "../../public/tailwind-spotify.png";
 import Project from "./Project";
 
 interface ProjectData {
@@ -29,7 +30,7 @@ export default function Projects() {
       projectDescription:
         "Landing page para loja de geleias artesanais, desenvolvida com HTML, CSS e JavaScript, focada em apresentar produtos de forma atrativa e responsiva.",
       projectLink: "https://docecompota.com.br/",
-      projectImageUrl: ProjectImage,
+      projectImageUrl: DoceCompota,
       projectRepositoryUrl: "https://github.com/oCesaum/Landing-Page-Doce-Compota",
     },
     {
