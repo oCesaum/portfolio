@@ -3,6 +3,7 @@ import Barber from "../../public/barber.png";
 import CalculadoraTG from "../../public/calculadora-taxa-gravidade.png";
 import FastCart from "../../public/fast-cart.png";
 import TailwindSpotify from "../../public/tailwind-spotify.png";
+import ProjectImage from "../../public/project-image.jpg";
 import Project from "./Project";
 
 interface ProjectData {
@@ -16,11 +17,28 @@ interface ProjectData {
 export default function Projects() {
   const projects: ProjectData[] = [
     {
+      projectName: "DOM Comparator Universal",
+      projectDescription:
+        "Ferramenta web completa para comparação de sitemaps XML e código HTML com normalização inteligente, robô automatizado e interface moderna com suporte a tema claro/escuro.",
+      projectLink: "https://dom-comparator.vercel.app/",
+      projectImageUrl: ProjectImage,
+      projectRepositoryUrl: "https://github.com/oCesaum/DOM-Comparator",
+    },
+    {
+      projectName: "Doce Compota",
+      projectDescription:
+        "Landing page para loja de geleias artesanais, desenvolvida com HTML, CSS e JavaScript, focada em apresentar produtos de forma atrativa e responsiva.",
+      projectLink: "https://docecompota.com.br/",
+      projectImageUrl: ProjectImage,
+      projectRepositoryUrl: "https://github.com/oCesaum/Landing-Page-Doce-Compota",
+    },
+    {
       projectName: "Fast Cart - Landing Page",
       projectDescription:
         "Um projeto feito para automatizar a criação de um carrinho de compras em sites de venda.",
       projectLink: "https://fast-cart-landing-page.vercel.app/",
       projectImageUrl: FastCart,
+      projectRepositoryUrl: "https://github.com/oCesaum/fast-cart-landing-page",
     },
     {
       projectName: "Tailwind Spotify",

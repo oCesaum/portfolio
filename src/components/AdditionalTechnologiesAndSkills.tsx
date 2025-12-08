@@ -21,6 +21,9 @@ export default function AdditionalTechnologiesAndSkills() {
     { id: 2, name: "Vs Code" },
     { id: 3, name: "Inglês" },
     { id: 4, name: "Product Owner" },
+    { id: 5, name: "PHP" },
+    { id: 6, name: "WordPress" },
+    { id: 7, name: "npm" },
   ];
   return (
     <ul className="flex flex-wrap items-center gap-10 pl-6 text-lg uppercase">

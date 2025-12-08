@@ -1,9 +1,9 @@
 import AdditionalTechnologiesAndSkills from "@/components/AdditionalTechnologiesAndSkills";
+import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
-// import Timeline from "@/components/Timeline";
 import Image from "next/image";
 import Mario from "../../public/mario.gif";
 
@@ -27,9 +27,9 @@ export default function Home() {
           </h2>
           <div className="text-sm md:text-base">
             <p>
-              Olá! Sou um{" "}
-              <b>desenvolvedor front-end em transição de carreira.</b>{" "}
-              Atualmente trabalhando como técnico em segurança do trabalho.{" "}
+              Olá! Sou um <b>desenvolvedor front-end</b> apaixonado por criar
+              experiências web modernas e funcionais. Especializado em React,
+              Next.js, TypeScript e Tailwind CSS.
             </p>
           </div>
         </div>
@@ -64,15 +64,15 @@ export default function Home() {
         </p>
         <AdditionalTechnologiesAndSkills />
       </section>
-      {/* <section
+      <section
         id="about"
         className="px-6 pb-10 pt-20 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
         <p className="mb-6 text-xl md:text-2xl font-semibold uppercase">
           Sobre mim
         </p>
-        <Timeline />
-      </section> */}
+        <About />
+      </section>
       <Footer />
     </main>
   );

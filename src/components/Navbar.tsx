@@ -32,7 +32,7 @@ const Navbar = () => {
               Tecnologias
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link
               to="about"
               smooth="true"
@@ -41,7 +41,7 @@ const Navbar = () => {
             >
               Sobre mim
             </Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
       <button
@@ -85,7 +85,7 @@ const Navbar = () => {
                 Tecnologias
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link
                 to="about"
                 smooth="true"
@@ -95,7 +95,7 @@ const Navbar = () => {
               >
                 Sobre mim
               </Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
       </div>
