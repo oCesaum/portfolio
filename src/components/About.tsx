@@ -15,7 +15,7 @@ export default function About() {
         o que me permite entregar soluções completas e de alta qualidade.
       </p>
       <p>
-        Minha paixão está em transformar ideias em código funcional, sempre
+        Transformo ideias em código funcional, sempre
         buscando as melhores práticas e soluções eficientes para cada desafio.
       </p>
     </div>
