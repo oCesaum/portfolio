@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
-import Timeline from "@/components/Timeline";
+// import Timeline from "@/components/Timeline";
 import Image from "next/image";
 import Mario from "../../public/mario.gif";
 
@@ -64,7 +64,7 @@ export default function Home() {
         </p>
         <AdditionalTechnologiesAndSkills />
       </section>
-      <section
+      {/* <section
         id="about"
         className="px-6 pb-10 pt-20 md:px-28 md:pb-24 lg:px-32 lg:pb-32"
       >
@@ -72,7 +72,7 @@ export default function Home() {
           Sobre mim
         </p>
         <Timeline />
-      </section>
+      </section> */}
       <Footer />
     </main>
   );
