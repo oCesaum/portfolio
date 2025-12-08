@@ -1,7 +1,7 @@
 export default function Technologies() {
   return (
-    <div className="grid grid-cols-3 justify-items-center sm:flex gap-5 justify-between mb-10">
-      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center hover:scale-110 transition relative group">
+    <div className="grid grid-cols-3 justify-items-start sm:flex sm:justify-start sm:items-center gap-5 sm:gap-8 mb-10">
+      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-start hover:scale-110 transition relative group">
         <p className="absolute -top-2 text-xs font-bold text-[#5FA04E] hidden group-hover:block right-1/2 translate-x-1/2 uppercase">
           Node.js
         </p>
@@ -24,7 +24,7 @@ export default function Technologies() {
           </defs>
         </svg>
       </div>
-      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center hover:scale-110 transition relative group">
+      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-start hover:scale-110 transition relative group">
         <p className="absolute -top-2 text-xs font-bold text-[#007acc] hidden group-hover:block right-1/2 translate-x-1/2 uppercase">
           Typescript
         </p>
@@ -42,7 +42,7 @@ export default function Technologies() {
           ></path>
         </svg>
       </div>
-      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center hover:scale-110 transition relative group">
+      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-start hover:scale-110 transition relative group">
         <p className="absolute -top-2 text-xs font-bold text-[#61dafb] hidden group-hover:block right-1/2 translate-x-1/2 uppercase">
           React
         </p>
@@ -58,7 +58,7 @@ export default function Technologies() {
           </g>
         </svg>
       </div>
-      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center hover:scale-110 transition relative group">
+      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-start hover:scale-110 transition relative group">
         <p className="absolute -top-2 text-xs font-bold text-[#FFF] hidden group-hover:block right-1/2 translate-x-1/2 uppercase">
           NextJs
         </p>
@@ -72,7 +72,7 @@ export default function Technologies() {
           <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"></path>
         </svg>
       </div>
-      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center hover:scale-110 transition relative group">
+      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-start hover:scale-110 transition relative group">
         <p className="absolute -top-2 text-xs font-bold text-[#777BB4] hidden group-hover:block right-1/2 translate-x-1/2 uppercase">
           PHP
         </p>
@@ -143,7 +143,7 @@ export default function Technologies() {
           </g>
         </svg>
       </div>
-      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center hover:scale-110 transition relative group">
+      <div className="w-fit h-24 2xl:w-32 2xl:h-32 flex flex-col justify-center items-start hover:scale-110 transition relative group">
         <p className="absolute -top-2 text-xs font-bold text-[#21759B] hidden group-hover:block right-1/2 translate-x-1/2 uppercase">
           WordPress
         </p>
