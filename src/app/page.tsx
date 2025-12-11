@@ -23,12 +23,12 @@ export default function Home() {
           <h2 className="text-2xl md:text-5xl font-bold uppercase">
             Desenvolvedor{" "}
             <span className="webkit-text-fill-color-transparent animate-background-pan bg-gradient-to-r from-blue-800 via-blue-600 via-90% to-blue-800 bg-200% bg-clip-text text-transparent">
-              front-end
+              Full-stack
             </span>
           </h2>
           <div className="text-sm md:text-base">
             <p>
-              Olá! Sou um <b>desenvolvedor front-end</b> apaixonado por criar
+              Olá! Sou um <b>desenvolvedor Full-stack</b> apaixonado por criar
               experiências web modernas e funcionais. Especializado em React,
               Next.js, TypeScript e Tailwind CSS.
             </p>

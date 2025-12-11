@@ -33,7 +33,7 @@ export default function Timeline() {
       id: 5,
       date: "2023",
       description:
-        "Com mais capacidade e experiência estou estudando para dominar React, Typescript e Next, com objetivo de me tornar inicialmente front-end, e no futuro full-stack.",
+        "Com mais capacidade e experiência estou estudando para dominar React, Typescript e Next, com objetivo de me tornar Full-stack.",
     },
   ];
 
