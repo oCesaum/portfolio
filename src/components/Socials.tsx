@@ -1,47 +1,51 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
+import { portfolioData } from "@/utils/portfolio-data";
 
 interface SocialsProps {
-  componentType: string;
+  componentType: "header" | "footer";
 }
+
+const baseClassName =
+  "inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-[var(--muted-foreground)] transition hover:border-white/20 hover:bg-white/10 hover:text-white";
 
 export default function Socials({ componentType }: SocialsProps) {
   return (
     <ul
-      className={`${
-        componentType === "header" ? "hidden md:flex" : "flex"
-      } items-center gap-4`}
+      className={`items-center gap-3 ${
+        componentType === "header" ? "flex" : "flex"
+      }`}
     >
-      <li title="Github">
+      <li title="GitHub">
         <a
-          href="https://github.com/oCesaum"
+          href={portfolioData.socials.github}
           target="_blank"
-          rel="noopener"
-          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-slate-900 dark:before:bg-slate-200 before:absolute before:-bottom-2"
-          aria-label="Link para meu Github"
+          rel="noopener noreferrer"
+          className={baseClassName}
+          aria-label="Abrir GitHub"
         >
-          <Github className="text-slate-950 dark:text-slate-200" />
+          <Github className="h-4 w-4" />
         </a>
       </li>
       <li title="LinkedIn">
         <a
-          href="https://www.linkedin.com/in/cesar-augusto-pinho/"
+          href={portfolioData.socials.linkedin}
           target="_blank"
-          rel="noopener"
-          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-slate-900 dark:before:bg-slate-200 before:absolute before:-bottom-2"
-          aria-label="Link para meu LinkedIn"
+          rel="noopener noreferrer"
+          className={baseClassName}
+          aria-label="Abrir LinkedIn"
         >
-          <Linkedin className="text-slate-950 dark:text-slate-200" />
+          <Linkedin className="h-4 w-4" />
         </a>
       </li>
       <li title="Instagram">
         <a
-          href="https://www.instagram.com/csr_pinho/"
+          href={portfolioData.socials.instagram}
           target="_blank"
-          rel="noopener"
-          className="relative before:w-0 before:hover:w-full before:transition-all before:duration-200 before:h-0.5 before:bg-slate-900 dark:before:bg-slate-200 before:absolute before:-bottom-2"
-          aria-label="Link para meu Instagram"
+          rel="noopener noreferrer"
+          className={baseClassName}
+          aria-label="Abrir Instagram"
         >
-          <Instagram className="text-slate-950 dark:text-slate-200" />
+          <Instagram className="h-4 w-4" />
         </a>
       </li>
     </ul>

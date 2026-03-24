@@ -9,7 +9,6 @@ export default function DarkModeButton() {
 
   useEffect(() => {
     setMounted(true);
-    // Verifica preferência salva ou do sistema
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
@@ -38,13 +37,13 @@ export default function DarkModeButton() {
   return (
     <button
       onClick={handleThemeToggle}
-      className="group"
+      className="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition hover:bg-white/10"
       aria-label="Alternar tema"
     >
       {theme === "light" ? (
-        <Sun className="text-slate-900 animate-rotate group-hover:text-yellow-500 duration-200 transition-colors" />
+        <Sun className="text-white animate-rotate transition-colors duration-200 group-hover:text-[var(--accent)]" />
       ) : (
-        <Moon className="text-slate-200 animate-rotate group-hover:text-blue-500 duration-200 transition-colors" />
+        <Moon className="text-white animate-rotate transition-colors duration-200 group-hover:text-[var(--accent)]" />
       )}
     </button>
   );

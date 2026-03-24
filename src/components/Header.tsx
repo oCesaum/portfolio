@@ -1,14 +1,32 @@
+import Socials from "./Socials";
 import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-5 uppercase md:px-28 lg:px-32 2xl:px-28">
-      <div
-        className="group relative flex items-center gap-3 before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full 2xl:before:hover:w-24 text-lg font-medium"
-      >
-        Portfólio
+    <header className="sticky top-0 z-40 px-6 pb-2 pt-6 md:px-10 xl:px-16">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 rounded-full border border-white/10 bg-[rgba(7,10,18,0.72)] px-4 py-3 shadow-[0_20px_80px_rgba(0,0,0,0.18)] backdrop-blur md:px-6">
+        <div className="flex min-w-0 flex-col">
+          <span className="text-xs uppercase tracking-[0.32em] text-[var(--muted-foreground)]">
+            Portfólio
+          </span>
+          <span className="truncate text-sm font-medium text-white md:text-base">
+            César Augusto
+          </span>
+        </div>
+
+        <div className="hidden xl:block">
+          <Navbar />
+        </div>
+
+        <div className="flex items-center gap-3">
+          <div className="hidden md:block">
+            <Socials componentType="header" />
+          </div>
+          <div className="xl:hidden">
+            <Navbar />
+          </div>
+        </div>
       </div>
-      <Navbar />
     </header>
   );
 }

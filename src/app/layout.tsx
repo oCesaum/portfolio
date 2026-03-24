@@ -1,29 +1,36 @@
-import { Poppins } from "next/font/google";
+import type { Metadata } from "next";
+import { Fraunces, Manrope } from "next/font/google";
 import Script from "next/script";
 
 import "./globals.css";
 import "./scrollbar.css";
 
-const poppins = Poppins({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-display",
 });
 
-export const metadata = {
-  title: "Portfólio - César Augusto",
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+export const metadata: Metadata = {
+  title: "Portfólio | César Augusto",
   description:
-    'Meu portfólio em React, gerado via "create next app" e utilizando Tailwind e Typescript',
+    "Portfólio de César Augusto, desenvolvedor full-stack com foco em produtos web modernos, interfaces bem construídas e soluções práticas.",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             height="1"
             width="1"
@@ -33,9 +40,7 @@ export default function RootLayout({
           />
         </noscript>
       </head>
-      <body
-        className={`mx-auto max-w-[1600px] bg-slate-200 dark:bg-slate-800 transition-all duration-500 ${poppins.className}`}
-      >
+      <body className={`${fraunces.variable} ${manrope.variable} app-shell`}>
         <Script id="meta-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)

@@ -2,106 +2,91 @@
 
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { Menu, X } from "lucide-react";
 import DarkModeButton from "./DarkModeButton";
+import { navigationItems } from "@/utils/portfolio-data";
 
-const Navbar = () => {
-  const [handleActivateMobileMenu, setHandleActivateMobileMenu] =
-    useState(false);
+export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <div className="flex items-center justify-center gap-5">
-      <nav>
-        <ul className="hidden items-center gap-16 lg:flex">
-          <li>
-            <Link
-              to="projects"
-              smooth="true"
-              duration={500}
-              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
-            >
-              Projetos
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="technologies"
-              smooth="true"
-              duration="400"
-              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
-            >
-              Tecnologias
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="about"
-              smooth="true"
-              duration="400"
-              className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
-            >
-              Sobre mim
-            </Link>
-          </li>
+    <div className="flex items-center gap-3">
+      <nav className="hidden xl:block">
+        <ul className="flex items-center gap-6">
+          {navigationItems.map((item) => (
+            <li key={item.id}>
+              <Link
+                to={item.id}
+                smooth
+                duration={450}
+                offset={-100}
+                className="cursor-pointer text-sm text-[var(--muted-foreground)] transition hover:text-white"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
+
+      <DarkModeButton />
+
       <button
-        aria-label="Ativar e desativar menu mobile"
-        onClick={() => setHandleActivateMobileMenu(!handleActivateMobileMenu)}
-        className="relative border-t-2 border-t-slate-950 dark:border-t-slate-200 after:-translate-y-full lg:hidden h-4 w-6 after:w-6 after:h-0.5 after:bg-slate-950 dark:after:bg-slate-200 after:block after:absolute after:top-1/2 before:w-6 before:h-0.5 before:bg-slate-950 dark:before:bg-slate-200 before:block before:absolute before:bottom-0 transition-transform duration-500"
-      ></button>
+        type="button"
+        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 xl:hidden"
+        onClick={() => setIsMenuOpen(true)}
+        aria-label="Abrir menu"
+      >
+        <Menu className="h-5 w-5" />
+      </button>
+
       <div
-        className={`fixed right-0 top-0 z-30 h-screen w-fit shadow-lg cursor-default bg-slate-100 dark:bg-slate-900 px-10 py-5 transition-all duration-300 ease-in lg:hidden ${
-          handleActivateMobileMenu ? "" : "translate-x-[110%]"
+        className={`fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm transition ${
+          isMenuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <nav>
-          <button
-            aria-label="Ativar e desativar menu mobile"
-            onClick={() =>
-              setHandleActivateMobileMenu(!handleActivateMobileMenu)
-            }
-            className="fixed right-6 top-6 before:rotate-[135deg] after:-rotate-[135deg] before:top-[0.35rem] after:-translate-y-full z-40 lg:hidden h-4 w-6 after:w-6 after:h-0.5 after:bg-slate-950 dark:after:bg-slate-200 after:block after:absolute after:top-1/2 before:w-6 before:h-0.5 before:bg-slate-950 dark:before:bg-slate-200 before:block before:absolute before:bottom-0 transition-transform duration-500"
-          ></button>
-          <ul className="flex flex-col items-center gap-16">
-            <li>
-              <Link
-                to="projects"
-                smooth="true"
-                duration="400"
-                onClick={() => setHandleActivateMobileMenu(false)}
-                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
-              >
-                Projetos
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="technologies"
-                smooth="true"
-                duration="400"
-                onClick={() => setHandleActivateMobileMenu(false)}
-                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
-              >
-                Tecnologias
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="about"
-                smooth="true"
-                duration="400"
-                onClick={() => setHandleActivateMobileMenu(false)}
-                className="relative cursor-pointer before:absolute before:bottom-0 before:h-0.5 before:w-0 before:bg-slate-950 dark:before:bg-slate-200 before:transition-all before:duration-200 before:hover:w-full inline-block pt-[1px]"
-              >
-                Sobre mim
-              </Link>
-            </li>
+        <div
+          className={`absolute right-4 top-4 w-[min(92vw,24rem)] rounded-[1.75rem] border border-white/10 bg-[rgba(7,10,18,0.96)] p-5 shadow-2xl transition duration-300 ${
+            isMenuOpen ? "translate-y-0" : "-translate-y-4"
+          }`}
+        >
+          <div className="mb-6 flex items-center justify-between">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-[var(--muted-foreground)]">
+                Navegação
+              </p>
+              <p className="mt-1 text-base font-medium text-white">César Augusto</p>
+            </div>
+            <button
+              type="button"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white"
+              onClick={closeMenu}
+              aria-label="Fechar menu"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+
+          <ul className="space-y-3">
+            {navigationItems.map((item) => (
+              <li key={item.id}>
+                <Link
+                  to={item.id}
+                  smooth
+                  duration={450}
+                  offset={-90}
+                  onClick={closeMenu}
+                  className="block cursor-pointer rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white transition hover:bg-white/10"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
-        </nav>
+        </div>
       </div>
-      <DarkModeButton />
     </div>
   );
-};
-
-export default Navbar;
+}
