@@ -44,6 +44,28 @@ export const portfolioData = {
         "Experiência em landing pages, ferramentas utilitárias e produtos web com foco em clareza, objetivo e resultado funcional.",
     },
   ],
+  focusAreas: [
+    {
+      title: "Arquitetura de Interfaces",
+      description:
+        "Estruturas de página, hierarquia visual e componentização pensadas para clareza, manutenção e boa leitura.",
+    },
+    {
+      title: "Back-end e Integrações",
+      description:
+        "Implementação com PHP, Node.js, WordPress e fluxos conectados a necessidades reais de produto.",
+    },
+    {
+      title: "UX/UI para Web",
+      description:
+        "Construção de interfaces responsivas com foco em experiência, escaneabilidade e direção visual consistente.",
+    },
+  ],
+  principles: [
+    "Clareza antes de excesso visual",
+    "Código limpo e evolução incremental",
+    "Interfaces responsivas e bem compostas",
+  ],
   projects: [
     {
       name: "DOM Comparator Universal",
@@ -104,6 +126,24 @@ export const portfolioData = {
       image: "/calculadora-taxa-gravidade.png",
       tags: ["Ferramenta web", "Produtividade", "Utilitário"],
       featured: false,
+    },
+  ],
+  contactCards: [
+    {
+      label: "Email",
+      value: "contato@cesaraugusto.dev",
+    },
+    {
+      label: "LinkedIn",
+      value: "linkedin.com/in/cesar-augusto-pinho",
+    },
+    {
+      label: "GitHub",
+      value: "github.com/oCesaum",
+    },
+    {
+      label: "WhatsApp",
+      value: "+55 31 98737-3513",
     },
   ],
   techStack: [

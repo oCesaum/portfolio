@@ -21,8 +21,8 @@ export default function Navbar() {
                 to={item.id}
                 smooth
                 duration={450}
-                offset={-100}
-                className="cursor-pointer text-sm text-[var(--muted-foreground)] transition hover:text-white"
+                offset={-92}
+                className="cursor-pointer text-[0.72rem] uppercase tracking-[0.1em] text-[var(--muted-foreground)] transition hover:text-white"
               >
                 {item.label}
               </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
 
       <button
         type="button"
-        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 xl:hidden"
+        className="inline-flex h-9 w-9 items-center justify-center border border-white/10 bg-white/[0.02] text-white transition hover:bg-white/[0.06] xl:hidden"
         onClick={() => setIsMenuOpen(true)}
         aria-label="Abrir menu"
       >
@@ -48,7 +48,7 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`absolute right-4 top-4 w-[min(92vw,24rem)] rounded-[1.75rem] border border-white/10 bg-[rgba(7,10,18,0.96)] p-5 shadow-2xl transition duration-300 ${
+          className={`absolute right-4 top-4 w-[min(92vw,24rem)] border border-white/10 bg-[rgba(7,10,18,0.96)] p-5 shadow-2xl transition duration-300 ${
             isMenuOpen ? "translate-y-0" : "-translate-y-4"
           }`}
         >
@@ -61,7 +61,7 @@ export default function Navbar() {
             </div>
             <button
               type="button"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white"
+              className="inline-flex h-9 w-9 items-center justify-center border border-white/10 bg-white/[0.02] text-white"
               onClick={closeMenu}
               aria-label="Fechar menu"
             >
@@ -78,7 +78,7 @@ export default function Navbar() {
                   duration={450}
                   offset={-90}
                   onClick={closeMenu}
-                  className="block cursor-pointer rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white transition hover:bg-white/10"
+                  className="block cursor-pointer border border-white/10 bg-white/[0.03] px-4 py-3 text-xs uppercase tracking-[0.12em] text-white transition hover:bg-white/[0.08]"
                 >
                   {item.label}
                 </Link>
