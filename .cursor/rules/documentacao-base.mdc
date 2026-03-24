@@ -1,0 +1,13 @@
+---
+description: Base documental e operacional para este projeto
+alwaysApply: true
+---
+
+- Responder em português do Brasil.
+- Respeitar as instruções locais em `AGENTS.md`.
+- Tratar `docs/` como base canônica da documentação do projeto.
+- Usar `docs/00-hub/documentacao-hub.md` como ponto de entrada principal.
+- Atualizar documentos existentes antes de criar novos.
+- Em novos documentos, usar frontmatter com `title`, `tipo`, `status`, `owner` e `atualizado_em`.
+- Usar apenas os status `rascunho`, `ativo`, `substituido` e `arquivado`.
+- Preservar o padrão existente do projeto e evitar duplicação documental.
