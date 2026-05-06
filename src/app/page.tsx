@@ -4,7 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import { portfolioData } from "@/utils/portfolio-data";
 import {
   ArrowUpRight,
-  BriefcaseBusiness,
+  Briefcase,
   Github,
   Linkedin,
   Mail,
@@ -252,7 +252,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
-                  <BriefcaseBusiness className="h-3.5 w-3.5" />
+                  <Briefcase className="h-3.5 w-3.5" />
                   Solucoes web com foco em clareza e execucao
                 </div>
               </div>
