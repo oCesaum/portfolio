@@ -1,6 +1,8 @@
 import { defaultLocale, getDictionary, isLocale, type Locale } from "@/lib/i18n";
 import Hero from "@/components/hero/Hero";
 import Projects from "@/components/projects/Projects";
+import Principles from "@/components/principles/Principles";
+import Contact from "@/components/contact/Contact";
 
 export default async function LocalePage({
   params,
@@ -15,6 +17,8 @@ export default async function LocalePage({
     <>
       <Hero dict={dict} />
       <Projects locale={locale} dict={dict} />
+      <Principles dict={dict} />
+      <Contact locale={locale} dict={dict} />
     </>
   );
 }
