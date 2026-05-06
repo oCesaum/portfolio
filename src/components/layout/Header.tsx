@@ -11,14 +11,14 @@ interface HeaderProps {
 const navIds = ["projects", "work", "principles", "contact"] as const;
 
 export default function Header({ locale, dict }: HeaderProps) {
-  const otherLocale: Locale = locale === "pt" ? "en" : "pt";
   const whatsappUrl = buildWhatsAppUrl(dict.contact.whatsapp_message);
+  const homeHref = locale === "pt" ? "/" : "/en";
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--color-border-1)] bg-[var(--color-background)]/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between gap-6">
         <Link
-          href={`/${locale}`}
+          href={homeHref}
           className="flex flex-col leading-tight"
           aria-label={`${dict.meta.brand} — ${dict.footer.role}`}
         >
@@ -45,7 +45,7 @@ export default function Header({ locale, dict }: HeaderProps) {
         <div className="flex items-center gap-3">
           <div className="flex items-center font-mono text-[10px] uppercase tracking-[0.16em]">
             <Link
-              href={`/${locale}`}
+              href="/"
               className={`px-1 ${
                 locale === "pt"
                   ? "text-[var(--color-foreground)]"
@@ -57,7 +57,7 @@ export default function Header({ locale, dict }: HeaderProps) {
             </Link>
             <span className="text-[var(--color-foreground-subtle)]">|</span>
             <Link
-              href={`/${otherLocale === "en" ? "en" : "pt"}`}
+              href="/en"
               className={`px-1 ${
                 locale === "en"
                   ? "text-[var(--color-foreground)]"

@@ -1,18 +1,15 @@
-import { defaultLocale, getDictionary, isLocale, type Locale } from "@/lib/i18n";
+import { type Locale, type Dictionary } from "@/lib/i18n";
 import Hero from "@/components/hero/Hero";
 import Projects from "@/components/projects/Projects";
 import Principles from "@/components/principles/Principles";
 import Contact from "@/components/contact/Contact";
 
-export default async function LocalePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
-  const locale: Locale = isLocale(rawLocale) ? rawLocale : defaultLocale;
-  const dict = getDictionary(locale);
+interface PageSectionsProps {
+  locale: Locale;
+  dict: Dictionary;
+}
 
+export default function PageSections({ locale, dict }: PageSectionsProps) {
   return (
     <>
       <Hero dict={dict} />

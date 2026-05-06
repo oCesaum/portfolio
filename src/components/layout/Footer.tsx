@@ -12,7 +12,6 @@ const year = new Date().getFullYear();
 
 export default function Footer({ locale, dict }: FooterProps) {
   const whatsappUrl = buildWhatsAppUrl(dict.contact.whatsapp_message);
-  const otherLocale: Locale = locale === "pt" ? "en" : "pt";
 
   const socials = [
     { id: "github", url: contactInfo.channels.github, Icon: Github, label: "GitHub" },
@@ -57,7 +56,7 @@ export default function Footer({ locale, dict }: FooterProps) {
 
           <div className="flex items-center font-mono text-[10px] uppercase tracking-[0.16em]">
             <Link
-              href="/pt"
+              href="/"
               className={`px-1 ${
                 locale === "pt"
                   ? "text-[var(--color-foreground)]"

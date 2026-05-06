@@ -1,18 +1,12 @@
 import { ImageResponse } from "next/og";
-import { getDictionary, isLocale, defaultLocale, type Locale } from "@/lib/i18n";
+import { getDictionary } from "@/lib/i18n";
 
 export const alt = "César Augusto — Full-stack engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function OpengraphImage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale: rawLocale } = await params;
-  const locale: Locale = isLocale(rawLocale) ? rawLocale : defaultLocale;
-  const dict = getDictionary(locale);
+export default function OpengraphImagePT() {
+  const dict = getDictionary("pt");
 
   return new ImageResponse(
     (
@@ -73,7 +67,9 @@ export default async function OpengraphImage({
               color: "#a1a1a1",
             }}
           >
-            <span style={{ color: "#fafafa", fontWeight: 600 }}>{dict.meta.brand}</span>
+            <span style={{ color: "#fafafa", fontWeight: 600 }}>
+              {dict.meta.brand}
+            </span>
             <span style={{ color: "#525252" }}>·</span>
             <span>{dict.footer.role}</span>
           </div>
