@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 import DarkModeButton from "./DarkModeButton";
 import { navigationItems } from "@/utils/portfolio-data";
@@ -17,15 +16,12 @@ export default function Navbar() {
         <ul className="flex items-center gap-6">
           {navigationItems.map((item) => (
             <li key={item.id}>
-              <Link
-                to={item.id}
-                smooth
-                duration={450}
-                offset={-92}
+              <a
+                href={`#${item.id}`}
                 className="cursor-pointer text-[0.72rem] uppercase tracking-[0.1em] text-[var(--muted-foreground)] transition hover:text-white"
               >
                 {item.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
@@ -72,16 +68,13 @@ export default function Navbar() {
           <ul className="space-y-3">
             {navigationItems.map((item) => (
               <li key={item.id}>
-                <Link
-                  to={item.id}
-                  smooth
-                  duration={450}
-                  offset={-90}
+                <a
+                  href={`#${item.id}`}
                   onClick={closeMenu}
                   className="block cursor-pointer border border-white/10 bg-white/[0.03] px-4 py-3 text-xs uppercase tracking-[0.12em] text-white transition hover:bg-white/[0.08]"
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
