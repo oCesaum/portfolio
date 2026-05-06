@@ -1,5 +1,6 @@
 import { defaultLocale, getDictionary, isLocale, type Locale } from "@/lib/i18n";
 import Hero from "@/components/hero/Hero";
+import Projects from "@/components/projects/Projects";
 
 export default async function LocalePage({
   params,
@@ -13,14 +14,7 @@ export default async function LocalePage({
   return (
     <>
       <Hero dict={dict} />
-      <section
-        id="projects"
-        className="container border-t border-[var(--color-border-1)] py-24"
-      >
-        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-[var(--color-foreground-subtle)]">
-          {dict.projects.eyebrow} · F6 lands next
-        </p>
-      </section>
+      <Projects locale={locale} dict={dict} />
     </>
   );
 }
