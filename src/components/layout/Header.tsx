@@ -20,7 +20,6 @@ export default function Header({ locale, dict }: HeaderProps) {
         <Link
           href={homeHref}
           className="flex flex-col leading-tight"
-          aria-label={`${dict.meta.brand} — ${dict.footer.role}`}
         >
           <span className="text-[15px] font-semibold tracking-tight text-[var(--color-foreground)]">
             {dict.meta.brand}
@@ -74,7 +73,6 @@ export default function Header({ locale, dict }: HeaderProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="hidden h-9 items-center gap-2 rounded-sm bg-[var(--color-accent)] px-4 text-xs font-semibold uppercase tracking-[0.08em] text-[var(--color-background)] transition-colors duration-150 hover:bg-[var(--color-accent-strong)] md:inline-flex"
-            aria-label={dict.fab.aria_label}
           >
             {dict.hero.cta_primary}
             <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={1.75} />

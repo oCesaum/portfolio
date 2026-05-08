@@ -29,7 +29,9 @@ export default function WhatsAppFab({ dict }: WhatsAppFabProps) {
           }}
         />
         <MessageCircle className="relative h-6 w-6" strokeWidth={1.75} />
-        <span className="relative hidden sm:inline">{dict.fab.label}</span>
+        <span className="relative hidden text-[var(--color-background)] sm:inline">
+          {dict.fab.label}
+        </span>
       </a>
       <style jsx>{`
         @keyframes fab-pulse {

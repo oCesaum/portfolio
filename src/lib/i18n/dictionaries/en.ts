@@ -92,7 +92,7 @@ export const en: Dictionary = {
   },
   fab: {
     label: "Message on WhatsApp",
-    aria_label: "Start a conversation on WhatsApp with César Augusto",
+    aria_label: "Message on WhatsApp — start a conversation with César Augusto",
   },
   footer: {
     role: "Full-stack engineer",

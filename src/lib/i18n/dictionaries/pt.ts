@@ -146,7 +146,7 @@ export const pt: Dictionary = {
   },
   fab: {
     label: "Falar no WhatsApp",
-    aria_label: "Iniciar conversa no WhatsApp com César Augusto",
+    aria_label: "Falar no WhatsApp — iniciar conversa com César Augusto",
   },
   footer: {
     role: "Full-stack engineer",

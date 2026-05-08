@@ -15,7 +15,7 @@
   /* texto */
   --color-foreground:           #fafafa;
   --color-foreground-muted:     #a1a1a1;
-  --color-foreground-subtle:    #737373;
+  --color-foreground-subtle:    #8a8a8a;
 
   /* linhas — escala tripla */
   --color-border-1:             rgba(255, 255, 255, 0.06);
@@ -175,25 +175,6 @@ body::before {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-foreground-subtle);
-  animation: eyebrow-breathe 3.6s var(--ease-in-out) infinite alternate;
-  will-change: opacity;
-}
-
-.eyebrow-num[data-section="02"] { animation-delay: 0.9s; }
-.eyebrow-num[data-section="03"] { animation-delay: 1.8s; }
-.eyebrow-num[data-section="04"] { animation-delay: 2.7s; }
-.eyebrow-num[data-section="05"] { animation-delay: 3.6s; }
-
-@keyframes eyebrow-breathe {
-  0%   { opacity: 0.55; }
-  100% { opacity: 0.75; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .eyebrow-num {
-    opacity: 0.65 !important;
-    animation: none !important;
-  }
 }
 
 /* =============================================================================

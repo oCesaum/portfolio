@@ -3,7 +3,7 @@ title: "Hub de documentação"
 tipo: "hub"
 status: "ativo"
 owner: "time do projeto"
-atualizado_em: "2026-03-24"
+atualizado_em: "2026-05-08"
 ---
 
 # Hub de documentação
@@ -21,6 +21,7 @@ Este é o ponto de entrada canônico da documentação do projeto.
 - [README da documentação](../README.md)
 - [Inventário do projeto](../01-inventario/inventario-do-projeto.md)
 - [Governança documental](../04-governanca/governanca-documental.md)
+- [Skills instaladas — guia para agentes](../06-skills/skills-instaladas.md)
 - [Templates](../05-templates/)
 - [Arquivo histórico](../90-arquivo/README.md)
 
@@ -30,3 +31,4 @@ Este é o ponto de entrada canônico da documentação do projeto.
 - Documentos novos ou atualizados devem manter frontmatter com metadados mínimos.
 - Materiais históricos ou substituídos não devem ser usados como referência principal sem validar o status.
 - `AGENTS.md` é configuração local do workspace e não deve ser versionado por padrão.
+- Antes de invocar qualquer skill (Claude Code, Codex, Cursor), consultar [Skills instaladas](../06-skills/skills-instaladas.md) para entender propósito, gatilhos e quando NÃO usar.

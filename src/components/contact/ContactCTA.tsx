@@ -8,14 +8,12 @@ interface ContactCTAProps {
   label: string;
   url: string;
   rotating: readonly string[];
-  ariaLabel: string;
 }
 
 export default function ContactCTA({
   label,
   url,
   rotating,
-  ariaLabel,
 }: ContactCTAProps) {
   const [idx, setIdx] = useState(0);
   const [reveal, setReveal] = useState(true);
@@ -46,7 +44,6 @@ export default function ContactCTA({
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={ariaLabel}
         className="group relative inline-flex items-center gap-5 rounded-lg border border-[var(--color-border-2)] bg-[var(--color-background-elevated)] px-6 py-5 transition-colors duration-200 hover:border-[var(--color-border-3)] sm:px-8"
       >
         <span

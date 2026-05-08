@@ -63,7 +63,6 @@ export default function Contact({ locale, dict }: ContactProps) {
             label={dict.contact.cta_primary}
             url={whatsappUrl}
             rotating={dict.contact.cta_rotating}
-            ariaLabel={dict.fab.aria_label}
           />
 
           <p className="font-mono text-xs uppercase tracking-[0.14em] text-[var(--color-foreground-muted)]">
