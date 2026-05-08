@@ -8,7 +8,7 @@ interface HeaderProps {
   dict: Dictionary;
 }
 
-const navIds = ["projects", "work", "principles", "contact"] as const;
+const navIds = ["projects", "work", "contact"] as const;
 
 export default function Header({ locale, dict }: HeaderProps) {
   const whatsappUrl = buildWhatsAppUrl(dict.contact.whatsapp_message);
