@@ -4,12 +4,12 @@ import PageShell from "@/components/layout/PageShell";
 import PageSections from "@/components/PageSections";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const dict = getDictionary("pt");
+  const dict = getDictionary("en");
   return {
     title: dict.meta.title,
     description: dict.meta.description,
     alternates: {
-      canonical: "/",
+      canonical: "/en",
       languages: {
         "pt-BR": "/",
         "en-US": "/en",
@@ -18,8 +18,8 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     openGraph: {
       type: "website",
-      locale: "pt_BR",
-      alternateLocale: ["en_US"],
+      locale: "en_US",
+      alternateLocale: ["pt_BR"],
       siteName: dict.meta.brand,
       title: dict.meta.title,
       description: dict.meta.description,
@@ -31,11 +31,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function HomePage() {
-  const dict = getDictionary("pt");
+export default function HomePageEN() {
+  const dict = getDictionary("en");
   return (
-    <PageShell locale="pt" dict={dict}>
-      <PageSections locale="pt" dict={dict} />
+    <PageShell locale="en" dict={dict}>
+      <PageSections locale="en" dict={dict} />
     </PageShell>
   );
 }

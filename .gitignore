@@ -39,3 +39,7 @@ next-env.d.ts
 
 # local editor and AI configs with credentials
 .cursor/mcp.json
+.claude/
+
+# audit artifacts (lighthouse reports, axe runs)
+.lighthouse/
