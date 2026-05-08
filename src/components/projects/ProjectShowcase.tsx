@@ -31,12 +31,18 @@ export default function ProjectShowcase({
   const domainLabel = getDomainLabel(project.url);
   const domainKind = getDomainKind(project.url);
 
-  const accentStyle = { ["--project-accent" as string]: project.accent };
+  const accent = project.accent;
+  const gradientAngle = isReversed ? "225deg" : "135deg";
+  const articleStyle = {
+    ["--project-accent" as string]: accent,
+    background: `linear-gradient(${gradientAngle}, color-mix(in oklab, ${accent} 18%, transparent) 0%, transparent 65%), color-mix(in oklab, ${accent} 6%, var(--color-background-elevated))`,
+    borderColor: `color-mix(in oklab, ${accent} 28%, var(--color-border-2))`,
+  };
 
   return (
     <article
-      style={accentStyle}
-      className="project-showcase group relative grid grid-cols-1 gap-8 md:grid-cols-12 md:items-center md:gap-12"
+      style={articleStyle}
+      className="project-showcase group relative grid grid-cols-1 gap-8 rounded-lg border p-6 transition-colors duration-300 md:grid-cols-12 md:items-center md:gap-12 md:p-10"
     >
       <div
         className={`relative md:col-span-7 ${

@@ -42,7 +42,7 @@ export const projects: readonly Project[] = [
     id: "dom-comparator",
     order: 1,
     kind: "featured",
-    accent: "#7aa9ff",
+    accent: "#3b82f6",
     name: { pt: "DOM Comparator Universal", en: "DOM Comparator Universal" },
     description: {
       pt: "Ferramenta web para comparar sitemaps XML e HTML com normalização inteligente. Inclui robô automatizado e tema claro/escuro.",
@@ -65,7 +65,7 @@ export const projects: readonly Project[] = [
     id: "doce-compota",
     order: 2,
     kind: "client",
-    accent: "#d18a4f",
+    accent: "#e85161",
     name: { pt: "Doce Compota", en: "Doce Compota" },
     description: {
       pt: "Site institucional para loja de geleias artesanais. HTML, CSS e JS puros, foco em apresentação de produto e responsividade.",
@@ -88,7 +88,7 @@ export const projects: readonly Project[] = [
     id: "fast-cart",
     order: 3,
     kind: "product",
-    accent: "#3ed598",
+    accent: "#ff5a5f",
     name: { pt: "Fast Cart Landing Page", en: "Fast Cart Landing Page" },
     description: {
       pt: "Landing de produto digital para automação de carrinho de compras em e-commerce.",
@@ -109,7 +109,7 @@ export const projects: readonly Project[] = [
     id: "tailwind-spotify",
     order: 4,
     kind: "study",
-    accent: "#1ed760",
+    accent: "#1db954",
     name: { pt: "Tailwind Spotify", en: "Tailwind Spotify" },
     description: {
       pt: "Estudo de UI: clone visual do Spotify com Next.js + Tailwind CSS. Foco em fidelidade e composição.",
@@ -131,7 +131,7 @@ export const projects: readonly Project[] = [
     id: "barber-landing-page",
     order: 5,
     kind: "client",
-    accent: "#c8a878",
+    accent: "#d34040",
     name: { pt: "Barber Landing Page", en: "Barber Landing Page" },
     description: {
       pt: "Landing direta para barbearias, com estrutura focada em apresentação de serviço e conversão por contato.",
