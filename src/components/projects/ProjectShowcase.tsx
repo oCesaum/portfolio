@@ -16,7 +16,7 @@ export default function ProjectShowcase({
   locale,
   dict,
 }: ProjectShowcaseProps) {
-  const isReversed = index % 2 === 1;
+  const isReversed = index % 2 === 0;
   const padded = (index + 1).toString().padStart(2, "0");
 
   const typeLabel =
