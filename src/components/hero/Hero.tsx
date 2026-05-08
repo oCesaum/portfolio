@@ -1,6 +1,5 @@
 import { type Dictionary } from "@/lib/i18n";
 import { buildWhatsAppUrl } from "@/lib/contact";
-import HeroPill from "./HeroPill";
 import HeroTitle from "./HeroTitle";
 import HeroCTA from "./HeroCTA";
 
@@ -26,19 +25,10 @@ export default function Hero({ dict }: HeroProps) {
         </p>
 
         <div className="md:col-span-8">
-          <div
-            className="hero-fade-up"
-            style={{ animationDelay: "100ms" }}
-          >
-            <HeroPill text={dict.hero.pill} />
-          </div>
-
-          <div className="mt-8">
-            <HeroTitle
-              line1={dict.hero.title_line1}
-              line2={dict.hero.title_line2}
-            />
-          </div>
+          <HeroTitle
+            line1={dict.hero.title_line1}
+            line2={dict.hero.title_line2}
+          />
         </div>
 
         <div className="space-y-8 md:col-span-6 md:col-start-7 md:translate-y-24">

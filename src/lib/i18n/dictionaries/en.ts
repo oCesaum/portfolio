@@ -2,7 +2,7 @@ import type { Dictionary } from "./pt";
 
 export const en: Dictionary = {
   meta: {
-    title: "César Augusto — Full-stack engineer",
+    title: "César Augusto — Full-stack Dev",
     description:
       "Clear web products, from brief to deploy. I work with founders and lean teams who need direct technical execution.",
     brand: "César Augusto",
@@ -16,7 +16,6 @@ export const en: Dictionary = {
   },
   hero: {
     eyebrow: "01 / Start",
-    pill: "Taking 2 projects this quarter · Reply within 24h",
     title_line1: "Clear web products,",
     title_line2: "from brief to deploy.",
     lead: "I work with founders and lean teams who need to take a web product from brief to deploy — without getting stuck in agency cycles or losing a month to meetings.",
@@ -76,7 +75,7 @@ export const en: Dictionary = {
   contact: {
     eyebrow: "05 / Contact",
     title: "Tell me the idea. I'll reply within 24 hours.",
-    lead: "Taking 2 projects this quarter. Send a WhatsApp with what you need to build — I'll come back with a timeline and a plan.",
+    lead: "Send a WhatsApp with what you need to build — I'll come back with a timeline and a plan.",
     cta_primary: "Message on WhatsApp",
     cta_rotating: [
       "REPLY WITHIN 24H",
@@ -95,7 +94,7 @@ export const en: Dictionary = {
     aria_label: "Message on WhatsApp — start a conversation with César Augusto",
   },
   footer: {
-    role: "Full-stack engineer",
+    role: "Full-stack Dev",
     tagline: "Based in Brazil · Available for projects",
   },
 };

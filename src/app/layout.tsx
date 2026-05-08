@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://cesaraugusto.vercel.app",
   ),
   title: {
-    default: "César Augusto — Full-stack engineer",
+    default: "César Augusto — Dev Full-stack",
     template: "%s | César Augusto",
   },
   description:

@@ -3,7 +3,6 @@ export type Dictionary = {
   nav: { home: string; projects: string; work: string; principles: string; contact: string };
   hero: {
     eyebrow: string;
-    pill: string;
     title_line1: string;
     title_line2: string;
     lead: string;
@@ -56,7 +55,7 @@ export type Dictionary = {
 
 export const pt: Dictionary = {
   meta: {
-    title: "César Augusto — Full-stack engineer",
+    title: "César Augusto — Dev Full-stack",
     description:
       "Produtos web claros, do briefing ao deploy. Trabalho com founders e times pequenos que precisam de execução técnica direta.",
     brand: "César Augusto",
@@ -70,7 +69,6 @@ export const pt: Dictionary = {
   },
   hero: {
     eyebrow: "01 / Início",
-    pill: "Aceitando 2 projetos este trimestre · Resposta em até 24h",
     title_line1: "Produtos web claros,",
     title_line2: "do briefing ao deploy.",
     lead: "Trabalho com founders e times pequenos que precisam tirar um produto web do briefing pro deploy — sem virar refém de agência, sem perder mês em reunião.",
@@ -130,7 +128,7 @@ export const pt: Dictionary = {
   contact: {
     eyebrow: "05 / Contato",
     title: "Conta a ideia. Eu respondo em até 24 horas.",
-    lead: "Aceitando 2 projetos este trimestre. Mande um WhatsApp com o que precisa fazer — eu volto com prazo e plano.",
+    lead: "Mande um WhatsApp com o que precisa fazer — eu volto com prazo e plano.",
     cta_primary: "Falar no WhatsApp",
     cta_rotating: [
       "RESPOSTA EM ATÉ 24H",
@@ -149,7 +147,7 @@ export const pt: Dictionary = {
     aria_label: "Falar no WhatsApp — iniciar conversa com César Augusto",
   },
   footer: {
-    role: "Full-stack engineer",
+    role: "Dev Full-stack",
     tagline: "Belo Horizonte · Disponível para projetos",
   },
 };
